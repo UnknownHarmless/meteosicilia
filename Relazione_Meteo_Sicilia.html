@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Relazione tecnica — Meteo Sicilia</title>
+<style>
+  :root{
+    --ink:#1c2433; --muted:#5b6675; --line:#d8dee9;
+    --accent:#1f5fa8; --accent2:#c2410c; --soft:#f4f7fb; --soft2:#fff6ef;
+  }
+  *{box-sizing:border-box;}
+  html{font-size:11.2pt;}
+  body{
+    font-family:"Georgia","Cambria",serif; color:#1c2433; line-height:1.55;
+    margin:0; background:#eceff3;
+  }
+  /* Pagina A4 simulata */
+  .page{
+    width:210mm; min-height:297mm; padding:24mm 22mm; margin:10mm auto;
+    background:#fff; box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  h1,h2,h3,h4{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif; color:#16243a; line-height:1.25;}
+  h2{font-size:17pt; margin:0 0 .2em; border-bottom:2px solid var(--accent); padding-bottom:.18em;}
+  h3{font-size:13pt; margin:1.1em 0 .25em; color:#1f5fa8;}
+  h4{font-size:11.4pt; margin:.9em 0 .2em; color:#2b3a52;}
+  p{margin:.45em 0; text-align:justify;}
+  a{color:#1f5fa8; text-decoration:none;}
+  ul,ol{margin:.35em 0 .6em 1.15em; padding:0;}
+  li{margin:.22em 0;}
+  code{font-family:"Consolas","SFMono-Regular",monospace; font-size:.86em; background:#eef2f7; padding:.05em .35em; border-radius:3px; color:#23314a;}
+  .small{font-size:.86em; color:#5b6675;}
+  .sez-num{color:var(--accent); font-weight:700;}
+  /* Copertina */
+  .cover{display:flex; flex-direction:column; min-height:249mm; text-align:center;}
+  .cover .logo{margin:6mm auto 0;}
+  .cover .logo svg{width:128mm; height:auto;}
+  .cover .kicker{letter-spacing:.28em; text-transform:uppercase; font-family:"Segoe UI",Arial,sans-serif; font-size:10pt; color:#1f5fa8; margin-top:14mm;}
+  .cover h1{font-size:30pt; margin:.25em 0 .1em; color:#16243a;}
+  .cover .sub{font-size:14pt; color:#3a4a63; font-family:"Segoe UI",Arial,sans-serif; font-weight:400;}
+  .cover .rule{width:60mm; height:3px; background:var(--accent); margin:7mm auto;}
+  .meta{margin-top:auto; font-family:"Segoe UI",Arial,sans-serif; font-size:10.5pt; color:#2b3a52;}
+  .meta table{margin:0 auto; border-collapse:collapse;}
+  .meta td{padding:3px 10px; text-align:left;}
+  .meta td.k{color:#5b6675; text-transform:uppercase; letter-spacing:.06em; font-size:9pt; text-align:right;}
+  /* Tabelle contenuto */
+  table.t{width:100%; border-collapse:collapse; margin:.6em 0 1em; font-family:"Segoe UI",Arial,sans-serif; font-size:9.8pt;}
+  table.t th{background:var(--accent); color:#fff; text-align:left; padding:6px 9px; font-weight:600;}
+  table.t td{border:1px solid var(--line); padding:6px 9px; vertical-align:top;}
+  table.t tr:nth-child(even) td{background:#f6f9fc;}
+  /* Callout "perché" */
+  .why{background:var(--soft2); border-left:4px solid var(--accent2); padding:.55em .9em; margin:.7em 0; border-radius:0 6px 6px 0; font-family:"Segoe UI",Arial,sans-serif; font-size:10pt;}
+  .why b{color:#9a3412;}
+  .note{background:var(--soft); border-left:4px solid var(--accent); padding:.55em .9em; margin:.7em 0; border-radius:0 6px 6px 0; font-family:"Segoe UI",Arial,sans-serif; font-size:10pt;}
+  /* Indice */
+  .toc{font-family:"Segoe UI",Arial,sans-serif; font-size:10.6pt;}
+  .toc li{margin:.3em 0;}
+  .toc .n{color:var(--accent); font-weight:700; display:inline-block; width:1.8em;}
+  /* Diagramma */
+  .diagram{margin:.8em 0; text-align:center;}
+  .diagram svg{max-width:100%; height:auto;}
+  .page-break{page-break-before:always;}
+  @media print{
+    body{background:#fff;}
+    .page{margin:0; box-shadow:none; width:auto; min-height:auto; padding:18mm 16mm;}
+    @page{size:A4; margin:0;}
+    h2{break-after:avoid;}
+    table.t,.why,.note,.diagram{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== COPERTINA ===================== -->
+<section class="page cover">
+  <div class="logo">
+    <svg width="560" height="150" viewBox="0 0 560 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Meteo Sicilia" style="color:#16243a">
+      <defs>
+        <radialGradient id="ms-sun" cx="50%" cy="44%" r="60%">
+          <stop offset="0%" stop-color="#FFE9A8"/><stop offset="38%" stop-color="#FFB957"/>
+          <stop offset="72%" stop-color="#FF7A59"/><stop offset="100%" stop-color="#FF4E78"/>
+        </radialGradient>
+        <radialGradient id="ms-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#FF8A4C" stop-opacity="0.45"/><stop offset="100%" stop-color="#FF8A4C" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="ms-island" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#5B2E7E"/><stop offset="100%" stop-color="#2A1645"/>
+        </linearGradient>
+        <linearGradient id="ms-text" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FF8A4C"/><stop offset="60%" stop-color="#FF4E78"/><stop offset="100%" stop-color="#B14CC0"/>
+        </linearGradient>
+      </defs>
+      <g transform="translate(12,12)">
+        <circle cx="60" cy="42" r="50" fill="url(#ms-glow)"/>
+        <g stroke="#FFB04C" stroke-width="3.1" stroke-linecap="round" opacity="0.9">
+          <line x1="94" y1="42" x2="103" y2="42"/><line x1="91.4" y1="29" x2="99.7" y2="25.5"/>
+          <line x1="84" y1="18" x2="90.4" y2="11.6"/><line x1="73" y1="10.6" x2="76.5" y2="2.3"/>
+          <line x1="60" y1="8" x2="60" y2="0"/><line x1="47" y1="10.6" x2="43.5" y2="2.3"/>
+          <line x1="36" y1="18" x2="29.6" y2="11.6"/><line x1="28.6" y1="29" x2="20.3" y2="25.5"/>
+          <line x1="26" y1="42" x2="17" y2="42"/>
+        </g>
+        <circle cx="60" cy="42" r="30" fill="url(#ms-sun)"/>
+        <path transform="translate(8,40) scale(1.04)" d="M 1,26 C -0.17,21.67 9,15.25 12,11 C 15,6.75 14.5,1.5 19,0.5 C 23.5,-0.5 33.67,4.25 39,5 C 44.33,5.75 43.17,5.33 51,5 C 58.83,4.67 78,3.67 86,3 C 94,2.33 97.17,0 99,1 C 100.83,2 98.17,4.33 97,9 C 95.83,13.67 94.17,23.5 92,29 C 89.83,34.5 85.67,38.67 84,42 C 82.33,45.33 83.17,46.33 82,49 C 80.83,51.67 82.17,57 77,58 C 71.83,59 58.67,57.17 51,55 C 43.33,52.83 36.33,48 31,45 C 25.67,42 24,40.17 19,37 C 14,33.83 2.17,30.33 1,26 Z" fill="url(#ms-island)"/>
+      </g>
+      <text x="168" y="80" font-family="'Segoe UI',system-ui,sans-serif" font-size="52" letter-spacing="-1">
+        <tspan fill="currentColor" font-weight="600">Meteo</tspan><tspan fill="url(#ms-text)" font-weight="800"> Sicilia</tspan>
+      </text>
+      <text x="170" y="108" font-family="'Segoe UI',sans-serif" font-size="14" letter-spacing="4.5" fill="currentColor" opacity="0.55" font-weight="600">METEO IN TEMPO REALE</text>
+    </svg>
+  </div>
+
+  <div class="kicker">Relazione tecnica di progetto</div>
+  <h1>Meteo Sicilia</h1>
+  <div class="sub">Stazione meteorologica IoT e applicazione web per il monitoraggio del meteo in tempo reale</div>
+  <div class="rule"></div>
+  <p class="small" style="max-width:150mm; margin:0 auto; color:#3a4a63;">
+    Sistema integrato hardware&ndash;software: una stazione basata su Raspberry Pi raccoglie i dati ambientali dai sensori
+    e li trasmette a un backend che li distribuisce, in tempo reale, a un&rsquo;interfaccia web responsiva. Per la citt&agrave; sede
+    della stazione i dati provengono direttamente dai sensori e da un modello di intelligenza artificiale per la previsione;
+    per gli altri comuni della Sicilia si utilizzano dati meteorologici professionali.
+  </p>
+
+  <div class="meta">
+    <table>
+      <tr><td class="k">Titolo</td><td>Meteo Sicilia &mdash; piattaforma web meteo</td></tr>
+      <tr><td class="k">Studente/i</td><td>______________________________</td></tr>
+      <tr><td class="k">Classe</td><td>____________</td></tr>
+      <tr><td class="k">Materia</td><td>____________________</td></tr>
+      <tr><td class="k">Docente</td><td>____________________</td></tr>
+      <tr><td class="k">Istituto</td><td>____________________</td></tr>
+      <tr><td class="k">Anno scolastico</td><td>20____ / 20____</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== INDICE ===================== -->
+<section class="page">
+  <h2>Indice</h2>
+  <ol class="toc" style="list-style:none; margin-left:0;">
+    <li><span class="n">1.</span> Introduzione e obiettivi</li>
+    <li><span class="n">2.</span> Visione d&rsquo;insieme e architettura del sistema</li>
+    <li><span class="n">3.</span> La stazione meteorologica (Raspberry Pi) e i sensori</li>
+    <li><span class="n">4.</span> Il backend: FastAPI, MQTT, database e tempo reale</li>
+    <li><span class="n">5.</span> Il frontend: React, TypeScript e Tailwind CSS</li>
+    <li><span class="n">6.</span> Gestione e integrazione dei dati &mdash; il caso Palermo</li>
+    <li><span class="n">7.</span> Il grafico orario interattivo in SVG</li>
+    <li><span class="n">8.</span> I &laquo;Dettagli meteo&raquo;</li>
+    <li><span class="n">9.</span> Design, layout e adattamento responsive</li>
+    <li><span class="n">10.</span> Identit&agrave; visiva: logo e palette</li>
+    <li><span class="n">11.</span> Sicurezza, dominio e pubblicazione</li>
+    <li><span class="n">12.</span> Scelte tecniche e motivazioni</li>
+    <li><span class="n">13.</span> Problemi affrontati e soluzioni</li>
+    <li><span class="n">14.</span> Sviluppi futuri</li>
+    <li><span class="n">15.</span> Conclusioni</li>
+  </ol>
+
+  <div class="note" style="margin-top:1.2em;">
+    <b>Nota di lettura.</b> Il progetto unisce tre mondi: l&rsquo;<i>hardware</i> (la stazione con i sensori),
+    il <i>backend</i> (il programma che riceve e conserva i dati) e il <i>frontend</i> (il sito che li mostra).
+    La relazione segue questo percorso, dal dato fisico misurato fino alla sua rappresentazione sullo schermo,
+    spiegando per ogni scelta il <b>cosa</b>, il <b>come</b> e soprattutto il <b>perch&eacute;</b>.
+  </div>
+</section>
+
+<!-- ===================== 1. INTRODUZIONE ===================== -->
+<section class="page">
+  <h2><span class="sez-num">1.</span>&nbsp; Introduzione e obiettivi</h2>
+  <p>
+    <b>Meteo Sicilia</b> &egrave; una piattaforma web per la consultazione del meteo in tempo reale, pensata e realizzata
+    attorno a una stazione meteorologica fisica costruita con un <b>Raspberry Pi</b>. L&rsquo;idea di fondo &egrave; semplice ma
+    ambiziosa: non limitarsi a riportare previsioni generiche prese da un servizio esterno, ma <b>misurare davvero</b>
+    le condizioni ambientali con sensori reali e mostrarle, istante per istante, in un&rsquo;interfaccia moderna e curata.
+  </p>
+  <p>Gli obiettivi del progetto sono stati:</p>
+  <ul>
+    <li><b>Acquisire dati reali</b> (temperatura, umidit&agrave;, pressione, vento, luce, qualit&agrave; dell&rsquo;aria, monossido di carbonio) da una stazione fisica e renderli disponibili online.</li>
+    <li><b>Distribuire i dati in tempo reale</b> al sito, in modo che i valori si aggiornino senza dover ricaricare la pagina.</li>
+    <li><b>Integrare una previsione</b> per le ore successive prodotta da un modello di <b>intelligenza artificiale</b> sviluppato internamente.</li>
+    <li><b>Coprire l&rsquo;intera Sicilia</b>: per i comuni privi di stazione fisica, attingere a dati meteorologici professionali e gratuiti.</li>
+    <li><b>Offrire un&rsquo;esperienza d&rsquo;uso eccellente</b> su computer, tablet e smartphone, con grafici interattivi e schede di dettaglio leggibili.</li>
+  </ul>
+  <p>
+    Il risultato &egrave; un sistema completo e coerente in cui l&rsquo;elettronica, la programmazione lato server e lo sviluppo web
+    si incontrano: un esempio concreto di applicazione <b>IoT</b> (Internet of Things) dal sensore fino allo schermo.
+  </p>
+</section>
+
+<!-- ===================== 2. ARCHITETTURA ===================== -->
+<section class="page">
+  <h2><span class="sez-num">2.</span>&nbsp; Visione d&rsquo;insieme e architettura del sistema</h2>
+  <p>
+    Il sistema &egrave; organizzato in tre strati che comunicano tra loro. Il dato nasce nei <b>sensori</b>, viene raccolto e
+    conservato dal <b>backend</b> e infine raggiunge l&rsquo;utente attraverso il <b>frontend</b>. Lo schema seguente riassume
+    il flusso completo delle informazioni.
+  </p>
+
+  <div class="diagram">
+    <svg width="680" height="300" viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
+      <defs>
+        <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1f5fa8"/></marker>
+      </defs>
+      <!-- Stazione -->
+      <rect x="20" y="40" width="150" height="110" rx="10" fill="#f4f7fb" stroke="#1f5fa8"/>
+      <text x="95" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#16243a">Stazione fisica</text>
+      <text x="95" y="82" text-anchor="middle" font-size="11" fill="#3a4a63">Raspberry Pi</text>
+      <text x="95" y="100" text-anchor="middle" font-size="10" fill="#5b6675">Sensori ambientali</text>
+      <text x="95" y="116" text-anchor="middle" font-size="10" fill="#5b6675">+ fotocamera</text>
+      <text x="95" y="136" text-anchor="middle" font-size="9.5" fill="#c2410c">misura i dati reali</text>
+      <!-- Backend -->
+      <rect x="265" y="40" width="150" height="110" rx="10" fill="#f4f7fb" stroke="#1f5fa8"/>
+      <text x="340" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#16243a">Backend</text>
+      <text x="340" y="82" text-anchor="middle" font-size="11" fill="#3a4a63">FastAPI (Python)</text>
+      <text x="340" y="100" text-anchor="middle" font-size="10" fill="#5b6675">Database SQLite</text>
+      <text x="340" y="116" text-anchor="middle" font-size="10" fill="#5b6675">Stream SSE in tempo reale</text>
+      <text x="340" y="136" text-anchor="middle" font-size="9.5" fill="#c2410c">riceve e conserva</text>
+      <!-- Frontend -->
+      <rect x="510" y="40" width="150" height="110" rx="10" fill="#f4f7fb" stroke="#1f5fa8"/>
+      <text x="585" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#16243a">Frontend</text>
+      <text x="585" y="82" text-anchor="middle" font-size="11" fill="#3a4a63">React + TypeScript</text>
+      <text x="585" y="100" text-anchor="middle" font-size="10" fill="#5b6675">Interfaccia web</text>
+      <text x="585" y="116" text-anchor="middle" font-size="10" fill="#5b6675">PC / tablet / telefono</text>
+      <text x="585" y="136" text-anchor="middle" font-size="9.5" fill="#c2410c">mostra all&apos;utente</text>
+      <!-- frecce -->
+      <line x1="170" y1="95" x2="262" y2="95" stroke="#1f5fa8" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="216" y="88" text-anchor="middle" font-size="9" fill="#1f5fa8">MQTT</text>
+      <line x1="415" y1="95" x2="507" y2="95" stroke="#1f5fa8" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="461" y="88" text-anchor="middle" font-size="9" fill="#1f5fa8">HTTP / SSE</text>
+      <!-- Open-Meteo + AI -->
+      <rect x="265" y="205" width="150" height="62" rx="10" fill="#fff6ef" stroke="#c2410c"/>
+      <text x="340" y="230" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9a3412">Modello AI</text>
+      <text x="340" y="248" text-anchor="middle" font-size="9.5" fill="#7c2d12">previsione ore successive</text>
+      <line x1="340" y1="205" x2="340" y2="152" stroke="#c2410c" stroke-width="2" marker-end="url(#arr)"/>
+      <rect x="510" y="205" width="150" height="62" rx="10" fill="#fff6ef" stroke="#c2410c"/>
+      <text x="585" y="230" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9a3412">Open-Meteo</text>
+      <text x="585" y="248" text-anchor="middle" font-size="9.5" fill="#7c2d12">dati altri comuni + previsioni</text>
+      <line x1="585" y1="205" x2="585" y2="152" stroke="#c2410c" stroke-width="2" marker-end="url(#arr)"/>
+    </svg>
+  </div>
+
+  <h3>2.1 &nbsp;I tre strati</h3>
+  <ul>
+    <li><b>Stazione (livello fisico).</b> Il Raspberry Pi legge i sensori e invia i valori al backend tramite il protocollo <b>MQTT</b>, lo standard pi&ugrave; diffuso per l&rsquo;Internet of Things.</li>
+    <li><b>Backend (livello applicativo).</b> Un server scritto in <b>Python</b> con il framework <b>FastAPI</b> riceve i messaggi MQTT, li salva in un database e li ripubblica verso il sito in tempo reale.</li>
+    <li><b>Frontend (livello di presentazione).</b> Un&rsquo;applicazione web in <b>React</b> mostra i dati con grafici, schede e una mappa di citt&agrave;, adattandosi a qualsiasi dispositivo.</li>
+  </ul>
+  <p>
+    A questi si affiancano due <b>fonti dati esterne/intelligenti</b>: il <b>modello di intelligenza artificiale</b>, che prevede
+    l&rsquo;andamento delle ore successive per la citt&agrave; con stazione, e <b>Open-Meteo</b>, un servizio meteorologico professionale e
+    gratuito usato per tutti gli altri comuni siciliani e per le previsioni a sette giorni.
+  </p>
+</section>
+
+<!-- ===================== 3. STAZIONE ===================== -->
+<section class="page">
+  <h2><span class="sez-num">3.</span>&nbsp; La stazione meteorologica (Raspberry Pi) e i sensori</h2>
+  <p>
+    Il cuore fisico del progetto &egrave; una stazione costruita attorno a un <b>Raspberry Pi</b>, un piccolo computer a basso costo
+    che gestisce i sensori e si occupa di trasmettere le misurazioni. La stazione &egrave; collocata nella citt&agrave; sede del progetto
+    (<b>Palermo</b>) e rileva un insieme ricco di grandezze ambientali, comprese alcune legate alla <b>qualit&agrave; dell&rsquo;aria</b>,
+    che i comuni servizi meteo non forniscono.
+  </p>
+
+  <h3>3.1 &nbsp;Le grandezze misurate</h3>
+  <table class="t">
+    <tr><th>Grandezza</th><th>Campo dati</th><th>Descrizione e utilizzo</th></tr>
+    <tr><td>Temperatura</td><td><code>temperatura</code></td><td>Temperatura dell&rsquo;aria in gradi Celsius; valore principale mostrato nell&rsquo;intestazione.</td></tr>
+    <tr><td>Umidit&agrave;</td><td><code>umidita</code></td><td>Umidit&agrave; relativa percentuale; usata anche per calcolare la temperatura percepita e il punto di rugiada.</td></tr>
+    <tr><td>Pressione</td><td><code>pressione</code></td><td>Pressione atmosferica in hPa; il suo andamento aiuta a intuire i cambi di tempo.</td></tr>
+    <tr><td>Vento</td><td><code>vento</code></td><td>Velocit&agrave; del vento in km/h; convertita anche nella scala Beaufort con descrizione testuale.</td></tr>
+    <tr><td>Luce</td><td><code>luce</code></td><td>Intensit&agrave; luminosa / irraggiamento solare in percentuale.</td></tr>
+    <tr><td>Qualit&agrave; dell&rsquo;aria</td><td><code>qualita_aria</code></td><td>Indice sintetico (0% ottima &rarr; 100% pessima); tradotto in etichetta e colore (Ottima/Buona/Moderata/Scadente).</td></tr>
+    <tr><td>Monossido di carbonio</td><td><code>monossido_carb</code></td><td>Livello di CO rilevato da sensore di gas; indicatore di sicurezza ambientale.</td></tr>
+    <tr><td>Immagine</td><td><code>file_path</code></td><td>Fotografia del cielo acquisita dalla fotocamera, salvata e associata all&rsquo;istante di rilevamento.</td></tr>
+    <tr><td>Marca temporale</td><td><code>timestamp</code></td><td>Data e ora della lettura; chiave primaria che ordina cronologicamente i dati.</td></tr>
+  </table>
+
+  <div class="note">
+    <b>Coerenza con l&rsquo;hardware reale.</b> I campi dati elencati corrispondono esattamente ai sensori effettivamente montati
+    sulla stazione. L&rsquo;applicazione &egrave; stata costruita rispettando questa struttura: non mostra grandezze inventate e non
+    presuppone sensori non presenti. Questa fedelt&agrave; tra software e hardware &egrave; stata un vincolo progettuale fondamentale.
+  </div>
+
+  <h3>3.2 &nbsp;Dalla misura al messaggio</h3>
+  <p>
+    Ad ogni ciclo di lettura il Raspberry Pi compone un messaggio con tutti i valori e lo pubblica su un <b>broker MQTT</b>
+    (software <code>Mosquitto</code>) sul canale <code>stazione1/sensori</code>; le immagini viaggiano su un canale dedicato
+    <code>stazione1/immagini</code>. Il backend, iscritto a questi canali, riceve i messaggi e li registra. Questo
+    disaccoppiamento &mdash; la stazione &laquo;pubblica&raquo; e il server &laquo;si iscrive&raquo; &mdash; rende il sistema robusto e facilmente
+    estendibile a pi&ugrave; stazioni future.
+  </p>
+</section>
+
+<!-- ===================== 4. BACKEND ===================== -->
+<section class="page">
+  <h2><span class="sez-num">4.</span>&nbsp; Il backend: FastAPI, MQTT, database e tempo reale</h2>
+  <p>
+    Il backend &egrave; il programma che fa da ponte tra la stazione e il sito. &Egrave; scritto in <b>Python</b> con <b>FastAPI</b>,
+    un framework moderno, veloce e <i>asincrono</i>, particolarmente adatto a gestire molte connessioni contemporanee e flussi
+    di dati continui. Le sue responsabilit&agrave; sono tre: <b>ricevere</b> i dati dalla stazione, <b>conservarli</b> e
+    <b>distribuirli</b> al frontend.
+  </p>
+
+  <h3>4.1 &nbsp;Ricezione e archiviazione</h3>
+  <p>
+    All&rsquo;avvio, il backend apre una connessione MQTT verso il broker e si mette in ascolto. Ogni messaggio ricevuto viene
+    salvato in un database <b>SQLite</b> (gestito in modo asincrono con la libreria <code>aiosqlite</code>) nella tabella
+    <code>dataset</code>, le cui colonne ricalcano esattamente le grandezze dei sensori. Le immagini vengono scritte su disco
+    e collegate al rispettivo istante. SQLite &egrave; stato scelto perch&eacute; &egrave; leggero, non richiede un server separato ed &egrave;
+    perfetto per una stazione singola.
+  </p>
+
+  <h3>4.2 &nbsp;Distribuzione in tempo reale (SSE)</h3>
+  <p>
+    Per aggiornare il sito senza ricaricare la pagina si utilizza la tecnologia <b>SSE</b> (Server-Sent Events): il browser
+    apre un canale permanente verso il backend e, ogni volta che arriva una nuova lettura dalla stazione, il server
+    &laquo;spinge&raquo; un segnale ai client connessi, che aggiornano i valori a schermo. &Egrave; la stessa logica delle notifiche in tempo
+    reale delle app moderne, ma realizzata con uno standard web semplice ed efficiente.
+  </p>
+
+  <h3>4.3 &nbsp;I punti di accesso (endpoint)</h3>
+  <table class="t">
+    <tr><th>Endpoint</th><th>Funzione</th></tr>
+    <tr><td><code>/last_read</code></td><td>Restituisce l&rsquo;ultima lettura registrata dai sensori.</td></tr>
+    <tr><td><code>/sse</code></td><td>Canale in tempo reale: notifica i client a ogni nuova misurazione.</td></tr>
+    <tr><td><code>/storico/oggi</code></td><td>Tutte le letture odierne della stazione, usate dal grafico e dai dettagli di Palermo.</td></tr>
+    <tr><td><code>/previsione/oggi</code></td><td>Previsione oraria del modello AI per le ore restanti della giornata (predisposto, in attesa dell&rsquo;integrazione del modello).</td></tr>
+  </table>
+
+  <div class="why">
+    <b>Perch&eacute; il CORS.</b> Durante lo sviluppo il sito gira su un indirizzo diverso da quello del backend. Senza un&rsquo;esplicita
+    autorizzazione il browser, per sicurezza, bloccherebbe queste chiamate &laquo;tra origini diverse&raquo;. Abbiamo quindi aggiunto il
+    middleware <b>CORS</b> che concede al frontend il permesso di interrogare il backend. Non si tratta di &laquo;dare internet al
+    server&raquo;, ma di una regola di sicurezza del browser da configurare correttamente.
+  </div>
+
+  <div class="note">
+    <b>Lavoro additivo e rispettoso.</b> La parte di backend che dialoga con i sensori (connessione MQTT, salvataggio nel
+    database, schema della tabella) &egrave; stata mantenuta intatta. I nostri interventi &mdash; abilitazione del CORS e aggiunta dei
+    due endpoint per Palermo &mdash; sono stati <b>puramente aggiuntivi</b>, senza modificare la logica esistente n&eacute; i dati
+    provenienti dalla stazione.
+  </div>
+</section>
+
+<!-- ===================== 5. FRONTEND ===================== -->
+<section class="page">
+  <h2><span class="sez-num">5.</span>&nbsp; Il frontend: React, TypeScript e Tailwind CSS</h2>
+  <p>
+    Il frontend &egrave; il sito vero e proprio, ci&ograve; che l&rsquo;utente vede e con cui interagisce. &Egrave; costruito con tecnologie
+    professionali e largamente diffuse nello sviluppo web moderno.
+  </p>
+
+  <h3>5.1 &nbsp;Lo stack tecnologico</h3>
+  <table class="t">
+    <tr><th>Tecnologia</th><th>Ruolo</th><th>Perch&eacute; &egrave; stata scelta</th></tr>
+    <tr><td><b>React</b></td><td>Libreria per costruire l&rsquo;interfaccia a componenti</td><td>Permette di scomporre il sito in &laquo;mattoncini&raquo; riutilizzabili e di aggiornare a schermo solo ci&ograve; che cambia.</td></tr>
+    <tr><td><b>TypeScript</b></td><td>Linguaggio (JavaScript con i tipi)</td><td>Aggiunge controlli automatici che individuano molti errori prima ancora di eseguire il codice.</td></tr>
+    <tr><td><b>Vite</b></td><td>Strumento di sviluppo e compilazione</td><td>Avvio quasi istantaneo e ricarica immediata delle modifiche durante lo sviluppo.</td></tr>
+    <tr><td><b>Tailwind CSS</b></td><td>Sistema di stile</td><td>Consente di impaginare in modo rapido e coerente, ideale per il design responsive.</td></tr>
+    <tr><td><b>shadcn/ui</b></td><td>Componenti d&rsquo;interfaccia pronti</td><td>Pulsanti, schede e finestre di ricerca gi&agrave; curati ed accessibili, da personalizzare.</td></tr>
+    <tr><td><b>React Router</b></td><td>Navigazione tra pagine</td><td>Gestisce la home geolocalizzata e la pagina del singolo comune.</td></tr>
+  </table>
+
+  <h3>5.2 &nbsp;Struttura a componenti</h3>
+  <p>L&rsquo;interfaccia &egrave; suddivisa in componenti, ciascuno con un compito preciso:</p>
+  <ul>
+    <li><b>Header</b> &mdash; barra superiore con marchio, ricerca dei comuni e selettore tema chiaro/scuro.</li>
+    <li><b>Striscia citt&agrave; preferite</b> &mdash; scorciatoie orizzontali alle principali citt&agrave; siciliane, con Palermo sempre in evidenza.</li>
+    <li><b>Meteo attuale</b> &mdash; scheda principale con temperatura, condizione e indicatori dei sensori.</li>
+    <li><b>Grafico orario</b> &mdash; andamento interattivo delle grandezze nell&rsquo;arco della giornata.</li>
+    <li><b>Previsioni 7 giorni</b> &mdash; elenco giornaliero con icone e intervallo minima&ndash;massima.</li>
+    <li><b>Dettagli meteo</b> &mdash; insieme di schede di approfondimento in stile &laquo;app meteo&raquo;.</li>
+    <li><b>Ricerca comune</b> &mdash; ricerca istantanea e <i>offline</i> tra i comuni siciliani.</li>
+  </ul>
+  <p>
+    Una <b>vista condivisa</b> (<code>WeatherView</code>) assembla questi componenti ed &egrave; usata sia dalla home sia dalla pagina
+    di un comune scelto: cos&igrave; il comportamento &egrave; identico ovunque e il codice non viene duplicato.
+  </p>
+
+  <div class="why">
+    <b>Perch&eacute; le chiamate ai dati esterni partono dal browser.</b> I dati di Open-Meteo e le previsioni a 7 giorni vengono
+    richiesti direttamente dal frontend. Questo alleggerisce il backend (che resta dedicato alla stazione), riduce i tempi di
+    risposta e sfrutta un servizio gratuito senza chiavi d&rsquo;accesso.
+  </div>
+</section>
+
+<!-- ===================== 6. DATI / PALERMO ===================== -->
+<section class="page">
+  <h2><span class="sez-num">6.</span>&nbsp; Gestione e integrazione dei dati &mdash; il caso Palermo</h2>
+  <p>
+    Una scelta centrale del progetto &egrave; che <b>Palermo non funziona come gli altri comuni</b>. Essendo la sede della stazione
+    fisica, per Palermo i dati del momento provengono <b>direttamente dai sensori del Raspberry</b>, mentre la previsione delle
+    ore successive &egrave; affidata al <b>modello di intelligenza artificiale</b> sviluppato internamente. Tutti gli altri comuni
+    utilizzano invece i dati professionali di <b>Open-Meteo</b>.
+  </p>
+
+  <h3>6.1 &nbsp;Instradamento intelligente dei dati</h3>
+  <p>
+    La logica di scelta della fonte &egrave; incapsulata in alcuni <b>hook</b> dedicati (funzioni riutilizzabili di React) che
+    decidono automaticamente da dove prendere i dati a seconda del comune richiesto:
+  </p>
+  <ul>
+    <li><b>Dati attuali</b> &mdash; per Palermo si apre il canale in tempo reale verso la stazione; per gli altri comuni si interroga Open-Meteo.</li>
+    <li><b>Serie oraria</b> &mdash; per Palermo si combinano lo storico reale dei sensori (passato e presente) e la previsione AI (futuro); per gli altri comuni si usa la previsione oraria di Open-Meteo.</li>
+    <li><b>Previsioni a 7 giorni</b> &mdash; sempre da Open-Meteo, anche per Palermo, perch&eacute; sono previsioni multi-giorno che esulano dalla misura locale.</li>
+  </ul>
+
+  <div class="note">
+    <b>Distinzione tra misurato e previsto.</b> Nel grafico la linea &egrave; <b>continua</b> per i dati realmente misurati e
+    <b>tratteggiata</b> per quelli previsti (dal modello AI per Palermo, da Open-Meteo per gli altri). L&rsquo;utente capisce
+    immediatamente quali valori sono certi e quali sono stime.
+  </div>
+
+  <p>
+    Questa distinzione &egrave; coerente in <b>tutta</b> l&rsquo;applicazione: ricerca, striscia delle citt&agrave;, grafico e schede di dettaglio
+    trattano Palermo in modo speciale. Il modello di intelligenza artificiale verr&agrave; collegato all&rsquo;endpoint gi&agrave; predisposto
+    <code>/previsione/oggi</code>: fino ad allora, come soluzione transitoria, l&rsquo;applicazione usa la previsione di Open-Meteo
+    come riserva, garantendo che il sito sia comunque pienamente funzionante.
+  </p>
+</section>
+
+<!-- ===================== 7. GRAFICO SVG ===================== -->
+<section class="page">
+  <h2><span class="sez-num">7.</span>&nbsp; Il grafico orario interattivo in SVG</h2>
+  <p>
+    Il grafico dell&rsquo;andamento orario &egrave; uno degli elementi pi&ugrave; curati dell&rsquo;applicazione. &Egrave; stato disegnato interamente a
+    mano in <b>SVG</b> (grafica vettoriale), senza ricorrere a librerie esterne di grafici.
+  </p>
+
+  <div class="why">
+    <b>Perch&eacute; non una libreria pronta.</b> Inizialmente era stata provata una libreria di grafici molto diffusa, che per&ograve;
+    risultava instabile con lo strumento di sviluppo usato, arrivando a rendere bianca l&rsquo;intera pagina. Disegnare il grafico
+    in SVG ci ha dato <b>controllo totale</b> sull&rsquo;aspetto, prestazioni migliori e perfetta resa anche su smartphone, eliminando
+    la dipendenza problematica.
+  </div>
+
+  <h3>7.1 &nbsp;Cosa permette di fare</h3>
+  <ul>
+    <li><b>Nove grandezze selezionabili</b> tramite schede: temperatura, precipitazioni, vento, qualit&agrave; dell&rsquo;aria, umidit&agrave;, nuvolosit&agrave;, pressione, luce e monossido di carbonio.</li>
+    <li><b>Navigazione tra i giorni</b>, da ieri fino a sei giorni avanti, per leggere l&rsquo;andamento di ciascuna giornata.</li>
+    <li><b>Tooltip interattivo</b> che, al passaggio del dito o del mouse, mostra ora precisa, valore e icona del tempo.</li>
+    <li><b>Indicatori di alba e tramonto</b> e una marcatura dell&rsquo;ora corrente con etichetta &laquo;Adesso&raquo;.</li>
+    <li><b>Curva morbida</b> ottenuta con un&rsquo;interpolazione matematica (Catmull-Rom convertita in curve di B&eacute;zier) per un tratto elegante e naturale.</li>
+    <li><b>Scorrimento orizzontale</b> con centratura automatica sull&rsquo;ora corrente: comodo soprattutto su telefono.</li>
+  </ul>
+  <p>
+    Il grafico &egrave; protetto da un meccanismo di sicurezza (<i>error boundary</i>) che, in caso di anomalia, mostra un messaggio
+    discreto invece di compromettere l&rsquo;intera pagina.
+  </p>
+</section>
+
+<!-- ===================== 8. DETTAGLI ===================== -->
+<section class="page">
+  <h2><span class="sez-num">8.</span>&nbsp; I &laquo;Dettagli meteo&raquo;</h2>
+  <p>
+    Sotto il grafico, una sezione di <b>schede di approfondimento</b> &mdash; ispirata nello stile alle grandi app meteo ma
+    costruita sui <b>nostri dati</b> &mdash; riassume in modo visivo ogni grandezza. Ogni scheda combina un valore numerico, una
+    breve interpretazione testuale e una piccola grafica vettoriale.
+  </p>
+
+  <h3>8.1 &nbsp;Le schede e i valori derivati</h3>
+  <p>
+    Oltre ai valori grezzi dei sensori, l&rsquo;applicazione calcola alcune grandezze <b>derivate</b> che arricchiscono la lettura:
+  </p>
+  <ul>
+    <li><b>Temperatura percepita</b> &mdash; combina temperatura, umidit&agrave; e vento (indice di calore o <i>wind chill</i>).</li>
+    <li><b>Punto di rugiada</b> &mdash; calcolato con la formula di Magnus a partire da temperatura e umidit&agrave;.</li>
+    <li><b>Scala Beaufort</b> &mdash; traduce la velocit&agrave; del vento in una forza con descrizione testuale (es. &laquo;Brezza tesa&raquo;).</li>
+    <li><b>Stato del cielo e qualit&agrave; dell&rsquo;aria</b> &mdash; percentuali tradotte in etichette e colori immediati.</li>
+    <li><b>Tendenze</b> &mdash; indicazioni come &laquo;in aumento&raquo;/&laquo;in calo&raquo; per temperatura e pressione, e l&rsquo;ora del prossimo picco.</li>
+  </ul>
+  <p>
+    Tutte le micro-grafiche (curve, archi, cerchi di riempimento) sono realizzate in <b>SVG inline</b>: leggere, nitide su ogni
+    schermo e senza librerie esterne.
+  </p>
+</section>
+
+<!-- ===================== 9. RESPONSIVE ===================== -->
+<section class="page">
+  <h2><span class="sez-num">9.</span>&nbsp; Design, layout e adattamento responsive</h2>
+  <p>
+    L&rsquo;interfaccia &egrave; stata progettata per essere <b>responsive</b>, cio&egrave; per adattarsi automaticamente alle dimensioni dello
+    schermo. Il layout di base si ispira alle moderne app meteo: striscia delle citt&agrave; in alto, meteo attuale e grafico al
+    centro, previsioni a sette giorni di fianco e schede di dettaglio in basso.
+  </p>
+
+  <h3>9.1 &nbsp;Tre formati, una sola esperienza</h3>
+  <ul>
+    <li><b>Computer e tablet</b> &mdash; disposizione su pi&ugrave; colonne (fino a tre) per sfruttare lo spazio: meteo attuale e grafico affiancati alle previsioni, dettagli a tre colonne.</li>
+    <li><b>Smartphone (verticale)</b> &mdash; tutto si riorganizza in una colonna ordinata e leggibile.</li>
+  </ul>
+
+  <h3>9.2 &nbsp;L&rsquo;ottimizzazione per telefono</h3>
+  <p>
+    La versione per smartphone ha richiesto un lavoro specifico per renderla, oltre che funzionale, anche <b>esteticamente
+    curata</b>. Gli interventi principali:
+  </p>
+  <ul>
+    <li><b>Intestazione &laquo;hero&raquo; centrata</b> &mdash; su telefono la scheda principale presenta in primo piano, al centro, la temperatura grande e l&rsquo;indicazione della qualit&agrave; dell&rsquo;aria.</li>
+    <li><b>Niente dati duplicati</b> &mdash; le sei metriche che su desktop affiancano la temperatura vengono nascoste sul telefono, perch&eacute; gi&agrave; presenti, in forma pi&ugrave; ricca, nelle schede di dettaglio: meno ripetizioni, meno scorrimento.</li>
+    <li><b>Dettagli a due colonne</b> &mdash; le schede si dispongono a due colonne sui telefoni normali e passano automaticamente a una sola colonna sugli schermi pi&ugrave; stretti, cos&igrave; i numeri non vengono mai tagliati.</li>
+    <li><b>Spaziature e titoli adattivi</b> &mdash; margini ridotti e testi che vanno a capo correttamente, senza fuoriuscire dai bordi.</li>
+    <li><b>Protezione dallo straripamento orizzontale</b> per evitare che il contenuto risulti compresso.</li>
+  </ul>
+
+  <div class="note">
+    <b>Tema chiaro e scuro.</b> L&rsquo;applicazione supporta entrambi i temi; i colori sono definiti con lo spazio colore moderno
+    <code>oklch</code>, che garantisce tinte uniformi e gradevoli in ogni modalit&agrave;. L&rsquo;estetica adotta uno stile &laquo;vetro&raquo;
+    (<i>glassmorphism</i>): schede semitrasparenti con leggera sfocatura dello sfondo.
+  </div>
+</section>
+
+<!-- ===================== 10. LOGO ===================== -->
+<section class="page">
+  <h2><span class="sez-num">10.</span>&nbsp; Identit&agrave; visiva: logo e palette</h2>
+  <p>
+    Per dare al progetto un&rsquo;identit&agrave; riconoscibile &egrave; stato creato un <b>logo originale</b>. Il concept unisce due elementi
+    inscindibili dal tema: la <b>sagoma reale dell&rsquo;isola</b> della Sicilia e il <b>sole</b> che vi tramonta dietro, avvolto da
+    un alone caldo.
+  </p>
+  <ul>
+    <li><b>Sagoma dell&rsquo;isola</b> &mdash; ricostruita fedelmente a partire da un&rsquo;immagine satellitare, individuando i principali punti della costa (da Marsala a Trapani, Palermo, Messina, Catania, Siracusa, fino ad Agrigento) e raccordandoli con curve morbide.</li>
+    <li><b>Palette &laquo;tramonto siciliano&raquo;</b> &mdash; sfumature dall&rsquo;arancio al rosa fino al viola, evocative dei tramonti dell&rsquo;isola.</li>
+    <li><b>Marchio testuale</b> &mdash; la scritta &laquo;Meteo Sicilia&raquo;, con &laquo;Sicilia&raquo; in gradiente, e il sottotitolo &laquo;Meteo in tempo reale&raquo;.</li>
+  </ul>
+  <p>
+    Il logo &egrave; realizzato in <b>SVG</b>, quindi resta nitido a qualsiasi dimensione, e ne esiste una versione quadrata come
+    <b>favicon</b> (l&rsquo;icona della scheda del browser). Lo stesso logo &egrave; riportato nella copertina di questa relazione.
+  </p>
+
+  <h3>10.1 &nbsp;Nome a dominio consigliato</h3>
+  <p>
+    Per la pubblicazione &egrave; consigliabile un dominio breve, facile da ricordare e coerente col nome del progetto (ad esempio
+    nella forma <code>meteosicilia</code> con estensione <code>.com</code> oppure <code>.it</code>), evitando nomi troppo lunghi o
+    complicati che renderebbero difficile trovare il sito.
+  </p>
+</section>
+
+<!-- ===================== 11. SICUREZZA ===================== -->
+<section class="page">
+  <h2><span class="sez-num">11.</span>&nbsp; Sicurezza, dominio e pubblicazione</h2>
+  <p>
+    Mettere online un sito che &laquo;parla&raquo; con una stazione installata in casa richiede attenzione alla sicurezza. Le misure
+    previste/consigliate sono le seguenti.
+  </p>
+  <table class="t">
+    <tr><th>Aspetto</th><th>Misura</th><th>Beneficio</th></tr>
+    <tr><td>Cifratura del traffico</td><td><b>HTTPS/TLS</b> con certificato gratuito (Let&rsquo;s Encrypt)</td><td>I dati viaggiano cifrati; il browser mostra il lucchetto e non segnala il sito come &laquo;non sicuro&raquo;.</td></tr>
+    <tr><td>Esposizione della stazione</td><td><b>Cloudflare Tunnel</b></td><td>Permette di pubblicare il backend domestico senza aprire porte sul router e senza rivelare l&rsquo;indirizzo IP di casa.</td></tr>
+    <tr><td>Registrazione del dominio</td><td><b>Privacy WHOIS</b> + blocco trasferimenti</td><td>Nasconde i dati personali dell&rsquo;intestatario e impedisce trasferimenti non autorizzati del dominio.</td></tr>
+    <tr><td>Accesso ai dati</td><td><b>CORS</b> configurato</td><td>Regola in modo controllato quali origini possono interrogare il backend.</td></tr>
+  </table>
+  <div class="note">
+    <b>Sul dominio Hostinger.</b> Registrare un dominio <code>.com</code> tramite un provider come Hostinger &egrave; sicuro, a patto di
+    attivare la <b>privacy WHOIS</b>, mantenere il <b>blocco del registrar</b> e servire sempre il sito in <b>HTTPS</b>. La
+    sicurezza del sito non dipende dal provider del dominio, ma dalla corretta configurazione di cifratura ed esposizione.
+  </div>
+</section>
+
+<!-- ===================== 12. SCELTE ===================== -->
+<section class="page">
+  <h2><span class="sez-num">12.</span>&nbsp; Scelte tecniche e motivazioni</h2>
+  <p>Riepilogo ragionato delle decisioni principali e del loro <b>perch&eacute;</b>.</p>
+  <table class="t">
+    <tr><th>Scelta</th><th>Motivazione</th></tr>
+    <tr><td>MQTT per la stazione</td><td>Standard leggero e affidabile per l&rsquo;IoT; disaccoppia stazione e server e apre alla futura aggiunta di pi&ugrave; stazioni.</td></tr>
+    <tr><td>FastAPI (Python, asincrono)</td><td>Veloce, adatto a flussi in tempo reale (SSE) e a molte connessioni simultanee; codice chiaro e moderno.</td></tr>
+    <tr><td>SQLite</td><td>Database leggero, senza server dedicato: ideale per una stazione locale.</td></tr>
+    <tr><td>SSE per il tempo reale</td><td>Standard web semplice ed efficiente per &laquo;spingere&raquo; aggiornamenti al sito senza ricaricare.</td></tr>
+    <tr><td>React + TypeScript</td><td>Interfaccia a componenti riutilizzabili e controllo dei tipi che previene molti errori.</td></tr>
+    <tr><td>Tailwind CSS</td><td>Impaginazione rapida, coerente e particolarmente comoda per il design responsive.</td></tr>
+    <tr><td>Grafico in SVG (no librerie)</td><td>Controllo totale, prestazioni e stabilit&agrave;; risolve i problemi avuti con una libreria esterna.</td></tr>
+    <tr><td>Open-Meteo per gli altri comuni</td><td>Servizio meteo professionale e gratuito, senza chiavi d&rsquo;accesso, interrogabile dal browser.</td></tr>
+    <tr><td>Interventi backend additivi</td><td>Non stravolgere il lavoro esistente sui sensori: massima compatibilit&agrave; e affidabilit&agrave;.</td></tr>
+  </table>
+</section>
+
+<!-- ===================== 13. PROBLEMI ===================== -->
+<section class="page">
+  <h2><span class="sez-num">13.</span>&nbsp; Problemi affrontati e soluzioni</h2>
+  <p>Lo sviluppo ha richiesto di individuare e risolvere diverse criticit&agrave;. Le principali:</p>
+  <table class="t">
+    <tr><th>Problema</th><th>Soluzione adottata</th></tr>
+    <tr><td>Codice ereditato da tutorial, con riferimenti a funzioni e dati inesistenti, che impediva la compilazione.</td><td>Pulizia e riscrittura dei moduli interessati, eliminando le parti incoerenti e ricostruendo le pagine sulla nostra architettura.</td></tr>
+    <tr><td>La libreria di grafici rendeva bianca la pagina con lo strumento di sviluppo usato.</td><td>Rimozione della libreria e realizzazione del grafico interamente in SVG.</td></tr>
+    <tr><td>L&rsquo;API non rispondeva alle chiamate del sito (blocco cross-origin del browser).</td><td>Configurazione del middleware CORS lato backend, in modo additivo.</td></tr>
+    <tr><td>Esperienza non soddisfacente su smartphone in verticale.</td><td>Ridisegno della versione mobile: hero centrato, niente dati duplicati, dettagli a due colonne, spaziature adattive.</td></tr>
+    <tr><td>Necessit&agrave; di trattare Palermo diversamente dagli altri comuni.</td><td>Hook di instradamento che scelgono automaticamente la fonte (stazione+AI per Palermo, Open-Meteo altrove) in modo coerente in tutta l&rsquo;app.</td></tr>
+  </table>
+</section>
+
+<!-- ===================== 14-15. FUTURO + CONCLUSIONI ===================== -->
+<section class="page">
+  <h2><span class="sez-num">14.</span>&nbsp; Sviluppi futuri</h2>
+  <ul>
+    <li><b>Integrazione del modello di intelligenza artificiale</b> sull&rsquo;endpoint gi&agrave; predisposto, per la previsione delle ore successive a Palermo.</li>
+    <li><b>Pi&ugrave; stazioni</b> in altre citt&agrave; siciliane, sfruttando la struttura gi&agrave; pensata per essere estesa.</li>
+    <li><b>Notifiche e installazione come app</b> (PWA), per avvisi meteo e accesso rapido dal telefono.</li>
+    <li><b>Archiviazione storica e statistiche</b> (medie, record, confronti tra periodi) a partire dai dati raccolti dai sensori.</li>
+    <li><b>Valorizzazione delle immagini</b> della fotocamera, ad esempio una galleria del cielo sincronizzata con i dati.</li>
+  </ul>
+
+  <h2 style="margin-top:1.4em;"><span class="sez-num">15.</span>&nbsp; Conclusioni</h2>
+  <p>
+    Il progetto <b>Meteo Sicilia</b> realizza un sistema completo che parte dal <b>dato fisico misurato</b> da una stazione
+    costruita con Raspberry Pi e arriva fino alla sua <b>rappresentazione curata</b> su un&rsquo;applicazione web moderna,
+    funzionante su qualsiasi dispositivo. Sono stati affrontati e integrati ambiti diversi &mdash; elettronica e sensori,
+    protocolli IoT, programmazione lato server in tempo reale, sviluppo web a componenti, design e sicurezza &mdash; in un&rsquo;unica
+    soluzione coerente.
+  </p>
+  <p>
+    Ogni decisione &egrave; stata presa con una motivazione precisa: affidabilit&agrave;, prestazioni, chiarezza per l&rsquo;utente e rispetto del
+    lavoro gi&agrave; esistente sui sensori. Il risultato &egrave; una piattaforma solida ed elegante, gi&agrave; pienamente utilizzabile e
+    predisposta a crescere con l&rsquo;integrazione del modello di intelligenza artificiale e l&rsquo;aggiunta di nuove stazioni.
+  </p>
+
+  <div class="note" style="margin-top:1.4em;">
+    <b>In sintesi.</b> Meteo Sicilia non &egrave; &laquo;solo un sito meteo&raquo;: &egrave; una catena completa che collega un sensore reale a uno
+    schermo, con scelte tecniche giustificate, un&rsquo;identit&agrave; visiva propria e un&rsquo;esperienza d&rsquo;uso curata su computer, tablet e
+    smartphone.
+  </div>
+
+  <p class="small" style="margin-top:2em; text-align:center; color:#5b6675;">Relazione tecnica &mdash; Meteo Sicilia &middot; documento generato per la consegna</p>
+</section>
+
+</body>
+</html>

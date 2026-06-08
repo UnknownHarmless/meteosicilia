@@ -1,0 +1,2276 @@
+[
+  {
+    "nome": "Agrigento",
+    "provincia": "AG",
+    "lat": 37.31065,
+    "lon": 13.57661
+  },
+  {
+    "nome": "Alessandria della Rocca",
+    "provincia": "AG",
+    "lat": 37.56767,
+    "lon": 13.45343
+  },
+  {
+    "nome": "Aragona",
+    "provincia": "AG",
+    "lat": 37.39904,
+    "lon": 13.61974
+  },
+  {
+    "nome": "Bivona",
+    "provincia": "AG",
+    "lat": 37.61797,
+    "lon": 13.43895
+  },
+  {
+    "nome": "Burgio",
+    "provincia": "AG",
+    "lat": 37.60094,
+    "lon": 13.28826
+  },
+  {
+    "nome": "Calamonaci",
+    "provincia": "AG",
+    "lat": 37.52566,
+    "lon": 13.29053
+  },
+  {
+    "nome": "Caltabellotta",
+    "provincia": "AG",
+    "lat": 37.57543,
+    "lon": 13.21632
+  },
+  {
+    "nome": "Camastra",
+    "provincia": "AG",
+    "lat": 37.2538,
+    "lon": 13.79211
+  },
+  {
+    "nome": "Cammarata",
+    "provincia": "AG",
+    "lat": 37.63361,
+    "lon": 13.62722
+  },
+  {
+    "nome": "Campobello di Licata",
+    "provincia": "AG",
+    "lat": 37.25759,
+    "lon": 13.91811
+  },
+  {
+    "nome": "Canicattì",
+    "provincia": "AG",
+    "lat": 37.35842,
+    "lon": 13.84786
+  },
+  {
+    "nome": "Casteltermini",
+    "provincia": "AG",
+    "lat": 37.53874,
+    "lon": 13.64601
+  },
+  {
+    "nome": "Castrofilippo",
+    "provincia": "AG",
+    "lat": 37.35046,
+    "lon": 13.75001
+  },
+  {
+    "nome": "Cattolica Eraclea",
+    "provincia": "AG",
+    "lat": 37.44069,
+    "lon": 13.39265
+  },
+  {
+    "nome": "Cianciana",
+    "provincia": "AG",
+    "lat": 37.51896,
+    "lon": 13.43349
+  },
+  {
+    "nome": "Comitini",
+    "provincia": "AG",
+    "lat": 37.40735,
+    "lon": 13.6453
+  },
+  {
+    "nome": "Favara",
+    "provincia": "AG",
+    "lat": 37.31754,
+    "lon": 13.66226
+  },
+  {
+    "nome": "Grotte",
+    "provincia": "AG",
+    "lat": 37.40346,
+    "lon": 13.69889
+  },
+  {
+    "nome": "Joppolo Giancaxio",
+    "provincia": "AG",
+    "lat": 37.38681,
+    "lon": 13.55586
+  },
+  {
+    "nome": "Licata",
+    "provincia": "AG",
+    "lat": 37.10267,
+    "lon": 13.93972
+  },
+  {
+    "nome": "Lucca Sicula",
+    "provincia": "AG",
+    "lat": 37.57783,
+    "lon": 13.30579
+  },
+  {
+    "nome": "Menfi",
+    "provincia": "AG",
+    "lat": 37.60409,
+    "lon": 12.96889
+  },
+  {
+    "nome": "Montallegro",
+    "provincia": "AG",
+    "lat": 37.39121,
+    "lon": 13.35179
+  },
+  {
+    "nome": "Montevago",
+    "provincia": "AG",
+    "lat": 37.70224,
+    "lon": 12.98584
+  },
+  {
+    "nome": "Naro",
+    "provincia": "AG",
+    "lat": 37.29248,
+    "lon": 13.79337
+  },
+  {
+    "nome": "Palma di Montechiaro",
+    "provincia": "AG",
+    "lat": 37.19066,
+    "lon": 13.76603
+  },
+  {
+    "nome": "Porto Empedocle",
+    "provincia": "AG",
+    "lat": 37.28942,
+    "lon": 13.52494
+  },
+  {
+    "nome": "Racalmuto",
+    "provincia": "AG",
+    "lat": 37.40498,
+    "lon": 13.72995
+  },
+  {
+    "nome": "Raffadali",
+    "provincia": "AG",
+    "lat": 37.40214,
+    "lon": 13.53175
+  },
+  {
+    "nome": "Ravanusa",
+    "provincia": "AG",
+    "lat": 37.26659,
+    "lon": 13.96834
+  },
+  {
+    "nome": "Realmonte",
+    "provincia": "AG",
+    "lat": 37.30847,
+    "lon": 13.46429
+  },
+  {
+    "nome": "Ribera",
+    "provincia": "AG",
+    "lat": 37.49773,
+    "lon": 13.26676
+  },
+  {
+    "nome": "Sambuca di Sicilia",
+    "provincia": "AG",
+    "lat": 37.65294,
+    "lon": 13.11462
+  },
+  {
+    "nome": "San Biagio Platani",
+    "provincia": "AG",
+    "lat": 37.50927,
+    "lon": 13.52844
+  },
+  {
+    "nome": "San Giovanni Gemini",
+    "provincia": "AG",
+    "lat": 37.62785,
+    "lon": 13.64357
+  },
+  {
+    "nome": "Sant'Angelo Muxaro",
+    "provincia": "AG",
+    "lat": 37.48014,
+    "lon": 13.54554
+  },
+  {
+    "nome": "Santa Elisabetta",
+    "provincia": "AG",
+    "lat": 37.43171,
+    "lon": 13.55386
+  },
+  {
+    "nome": "Santa Margherita di Belice",
+    "provincia": "AG",
+    "lat": 37.69281,
+    "lon": 13.01584
+  },
+  {
+    "nome": "Santo Stefano Quisquina",
+    "provincia": "AG",
+    "lat": 37.62606,
+    "lon": 13.48976
+  },
+  {
+    "nome": "Sciacca",
+    "provincia": "AG",
+    "lat": 37.50693,
+    "lon": 13.08399
+  },
+  {
+    "nome": "Siculiana",
+    "provincia": "AG",
+    "lat": 37.33515,
+    "lon": 13.42432
+  },
+  {
+    "nome": "Villafranca Sicula",
+    "provincia": "AG",
+    "lat": 37.58761,
+    "lon": 13.29048
+  },
+  {
+    "nome": "Caltanissetta",
+    "provincia": "CL",
+    "lat": 37.49025,
+    "lon": 14.06216
+  },
+  {
+    "nome": "Acquaviva Platani",
+    "provincia": "CL",
+    "lat": 37.57174,
+    "lon": 13.70156
+  },
+  {
+    "nome": "Bompensiere",
+    "provincia": "CL",
+    "lat": 37.4724,
+    "lon": 13.7814
+  },
+  {
+    "nome": "Butera",
+    "provincia": "CL",
+    "lat": 37.191,
+    "lon": 14.18232
+  },
+  {
+    "nome": "Campofranco",
+    "provincia": "CL",
+    "lat": 37.51208,
+    "lon": 13.71213
+  },
+  {
+    "nome": "Delia",
+    "provincia": "CL",
+    "lat": 37.35796,
+    "lon": 13.92867
+  },
+  {
+    "nome": "Gela",
+    "provincia": "CL",
+    "lat": 37.07381,
+    "lon": 14.24038
+  },
+  {
+    "nome": "Marianopoli",
+    "provincia": "CL",
+    "lat": 37.5984,
+    "lon": 13.9152
+  },
+  {
+    "nome": "Mazzarino",
+    "provincia": "CL",
+    "lat": 37.30188,
+    "lon": 14.20959
+  },
+  {
+    "nome": "Milena",
+    "provincia": "CL",
+    "lat": 37.47133,
+    "lon": 13.73613
+  },
+  {
+    "nome": "Montedoro",
+    "provincia": "CL",
+    "lat": 37.45431,
+    "lon": 13.81684
+  },
+  {
+    "nome": "Mussomeli",
+    "provincia": "CL",
+    "lat": 37.58067,
+    "lon": 13.75214
+  },
+  {
+    "nome": "Niscemi",
+    "provincia": "CL",
+    "lat": 37.14649,
+    "lon": 14.39381
+  },
+  {
+    "nome": "Resuttano",
+    "provincia": "CL",
+    "lat": 37.67865,
+    "lon": 14.02946
+  },
+  {
+    "nome": "Riesi",
+    "provincia": "CL",
+    "lat": 37.28079,
+    "lon": 14.08317
+  },
+  {
+    "nome": "San Cataldo",
+    "provincia": "CL",
+    "lat": 37.48412,
+    "lon": 13.98542
+  },
+  {
+    "nome": "Santa Caterina Villarmosa",
+    "provincia": "CL",
+    "lat": 37.59034,
+    "lon": 14.03554
+  },
+  {
+    "nome": "Serradifalco",
+    "provincia": "CL",
+    "lat": 37.45384,
+    "lon": 13.88046
+  },
+  {
+    "nome": "Sommatino",
+    "provincia": "CL",
+    "lat": 37.33471,
+    "lon": 13.99739
+  },
+  {
+    "nome": "Sutera",
+    "provincia": "CL",
+    "lat": 37.52493,
+    "lon": 13.73274
+  },
+  {
+    "nome": "Vallelunga Pratameno",
+    "provincia": "CL",
+    "lat": 37.68205,
+    "lon": 13.83156
+  },
+  {
+    "nome": "Villalba",
+    "provincia": "CL",
+    "lat": 37.65457,
+    "lon": 13.84452
+  },
+  {
+    "nome": "Catania",
+    "provincia": "CT",
+    "lat": 37.49223,
+    "lon": 15.07041
+  },
+  {
+    "nome": "Aci Bonaccorsi",
+    "provincia": "CT",
+    "lat": 37.5964,
+    "lon": 15.10724
+  },
+  {
+    "nome": "Aci Castello",
+    "provincia": "CT",
+    "lat": 37.55564,
+    "lon": 15.14535
+  },
+  {
+    "nome": "Aci Catena",
+    "provincia": "CT",
+    "lat": 37.60614,
+    "lon": 15.14165
+  },
+  {
+    "nome": "Aci Sant'Antonio",
+    "provincia": "CT",
+    "lat": 37.60499,
+    "lon": 15.12294
+  },
+  {
+    "nome": "Acireale",
+    "provincia": "CT",
+    "lat": 37.60886,
+    "lon": 15.16577
+  },
+  {
+    "nome": "Adrano",
+    "provincia": "CT",
+    "lat": 37.66358,
+    "lon": 14.83283
+  },
+  {
+    "nome": "Belpasso",
+    "provincia": "CT",
+    "lat": 37.59192,
+    "lon": 14.97985
+  },
+  {
+    "nome": "Biancavilla",
+    "provincia": "CT",
+    "lat": 37.64442,
+    "lon": 14.86685
+  },
+  {
+    "nome": "Bronte",
+    "provincia": "CT",
+    "lat": 37.78863,
+    "lon": 14.83377
+  },
+  {
+    "nome": "Calatabiano",
+    "provincia": "CT",
+    "lat": 37.82049,
+    "lon": 15.23069
+  },
+  {
+    "nome": "Caltagirone",
+    "provincia": "CT",
+    "lat": 37.23785,
+    "lon": 14.51551
+  },
+  {
+    "nome": "Camporotondo Etneo",
+    "provincia": "CT",
+    "lat": 37.56565,
+    "lon": 15.00319
+  },
+  {
+    "nome": "Castiglione di Sicilia",
+    "provincia": "CT",
+    "lat": 37.8815,
+    "lon": 15.12156
+  },
+  {
+    "nome": "Fiumefreddo di Sicilia",
+    "provincia": "CT",
+    "lat": 37.79146,
+    "lon": 15.20919
+  },
+  {
+    "nome": "Giarre",
+    "provincia": "CT",
+    "lat": 37.7244,
+    "lon": 15.18165
+  },
+  {
+    "nome": "Grammichele",
+    "provincia": "CT",
+    "lat": 37.21326,
+    "lon": 14.63311
+  },
+  {
+    "nome": "Gravina di Catania",
+    "provincia": "CT",
+    "lat": 37.56085,
+    "lon": 15.06292
+  },
+  {
+    "nome": "Licodia Eubea",
+    "provincia": "CT",
+    "lat": 37.15674,
+    "lon": 14.70555
+  },
+  {
+    "nome": "Linguaglossa",
+    "provincia": "CT",
+    "lat": 37.84243,
+    "lon": 15.13774
+  },
+  {
+    "nome": "Maletto",
+    "provincia": "CT",
+    "lat": 37.82914,
+    "lon": 14.86403
+  },
+  {
+    "nome": "Maniace",
+    "provincia": "CT",
+    "lat": 37.88306,
+    "lon": 14.79808
+  },
+  {
+    "nome": "Mascali",
+    "provincia": "CT",
+    "lat": 37.75794,
+    "lon": 15.19662
+  },
+  {
+    "nome": "Mascalucia",
+    "provincia": "CT",
+    "lat": 37.57465,
+    "lon": 15.04964
+  },
+  {
+    "nome": "Mazzarrone",
+    "provincia": "CT",
+    "lat": 37.08834,
+    "lon": 14.56128
+  },
+  {
+    "nome": "Militello in Val di Catania",
+    "provincia": "CT",
+    "lat": 37.27594,
+    "lon": 14.79342
+  },
+  {
+    "nome": "Milo",
+    "provincia": "CT",
+    "lat": 37.7245,
+    "lon": 15.11554
+  },
+  {
+    "nome": "Mineo",
+    "provincia": "CT",
+    "lat": 37.26494,
+    "lon": 14.69381
+  },
+  {
+    "nome": "Mirabella Imbaccari",
+    "provincia": "CT",
+    "lat": 37.32702,
+    "lon": 14.44605
+  },
+  {
+    "nome": "Misterbianco",
+    "provincia": "CT",
+    "lat": 37.51803,
+    "lon": 15.00913
+  },
+  {
+    "nome": "Motta Sant'Anastasia",
+    "provincia": "CT",
+    "lat": 37.51205,
+    "lon": 14.96628
+  },
+  {
+    "nome": "Nicolosi",
+    "provincia": "CT",
+    "lat": 37.62148,
+    "lon": 15.02785
+  },
+  {
+    "nome": "Palagonia",
+    "provincia": "CT",
+    "lat": 37.32955,
+    "lon": 14.74474
+  },
+  {
+    "nome": "Paternò",
+    "provincia": "CT",
+    "lat": 37.56675,
+    "lon": 14.90254
+  },
+  {
+    "nome": "Pedara",
+    "provincia": "CT",
+    "lat": 37.62386,
+    "lon": 15.05672
+  },
+  {
+    "nome": "Piedimonte Etneo",
+    "provincia": "CT",
+    "lat": 37.80677,
+    "lon": 15.17516
+  },
+  {
+    "nome": "Raddusa",
+    "provincia": "CT",
+    "lat": 37.47529,
+    "lon": 14.53521
+  },
+  {
+    "nome": "Ragalna",
+    "provincia": "CT",
+    "lat": 37.63455,
+    "lon": 14.94698
+  },
+  {
+    "nome": "Ramacca",
+    "provincia": "CT",
+    "lat": 37.38616,
+    "lon": 14.69241
+  },
+  {
+    "nome": "Randazzo",
+    "provincia": "CT",
+    "lat": 37.87736,
+    "lon": 14.95012
+  },
+  {
+    "nome": "Riposto",
+    "provincia": "CT",
+    "lat": 37.73183,
+    "lon": 15.20576
+  },
+  {
+    "nome": "San Cono",
+    "provincia": "CT",
+    "lat": 37.28992,
+    "lon": 14.36709
+  },
+  {
+    "nome": "San Giovanni la Punta",
+    "provincia": "CT",
+    "lat": 37.5769,
+    "lon": 15.09371
+  },
+  {
+    "nome": "San Gregorio di Catania",
+    "provincia": "CT",
+    "lat": 37.56764,
+    "lon": 15.1112
+  },
+  {
+    "nome": "San Michele di Ganzaria",
+    "provincia": "CT",
+    "lat": 37.28042,
+    "lon": 14.42633
+  },
+  {
+    "nome": "San Pietro Clarenza",
+    "provincia": "CT",
+    "lat": 37.56885,
+    "lon": 15.02289
+  },
+  {
+    "nome": "Sant'Agata li Battiati",
+    "provincia": "CT",
+    "lat": 37.55745,
+    "lon": 15.07999
+  },
+  {
+    "nome": "Sant'Alfio",
+    "provincia": "CT",
+    "lat": 37.74393,
+    "lon": 15.13952
+  },
+  {
+    "nome": "Santa Maria di Licodia",
+    "provincia": "CT",
+    "lat": 37.61684,
+    "lon": 14.89337
+  },
+  {
+    "nome": "Santa Venerina",
+    "provincia": "CT",
+    "lat": 37.69103,
+    "lon": 15.1388
+  },
+  {
+    "nome": "Scordia",
+    "provincia": "CT",
+    "lat": 37.29548,
+    "lon": 14.84058
+  },
+  {
+    "nome": "Trecastagni",
+    "provincia": "CT",
+    "lat": 37.61543,
+    "lon": 15.07796
+  },
+  {
+    "nome": "Tremestieri Etneo",
+    "provincia": "CT",
+    "lat": 37.56494,
+    "lon": 15.07863
+  },
+  {
+    "nome": "Valverde",
+    "provincia": "CT",
+    "lat": 37.57695,
+    "lon": 15.12419
+  },
+  {
+    "nome": "Viagrande",
+    "provincia": "CT",
+    "lat": 37.61032,
+    "lon": 15.09794
+  },
+  {
+    "nome": "Vizzini",
+    "provincia": "CT",
+    "lat": 37.16188,
+    "lon": 14.75712
+  },
+  {
+    "nome": "Zafferana Etnea",
+    "provincia": "CT",
+    "lat": 37.67895,
+    "lon": 15.10432
+  },
+  {
+    "nome": "Enna",
+    "provincia": "EN",
+    "lat": 37.5655,
+    "lon": 14.27433
+  },
+  {
+    "nome": "Agira",
+    "provincia": "EN",
+    "lat": 37.6558,
+    "lon": 14.51972
+  },
+  {
+    "nome": "Aidone",
+    "provincia": "EN",
+    "lat": 37.41468,
+    "lon": 14.44542
+  },
+  {
+    "nome": "Assoro",
+    "provincia": "EN",
+    "lat": 37.6221,
+    "lon": 14.4181
+  },
+  {
+    "nome": "Barrafranca",
+    "provincia": "EN",
+    "lat": 37.3785,
+    "lon": 14.2027
+  },
+  {
+    "nome": "Calascibetta",
+    "provincia": "EN",
+    "lat": 37.59024,
+    "lon": 14.2718
+  },
+  {
+    "nome": "Catenanuova",
+    "provincia": "EN",
+    "lat": 37.56876,
+    "lon": 14.69076
+  },
+  {
+    "nome": "Centuripe",
+    "provincia": "EN",
+    "lat": 37.62336,
+    "lon": 14.74049
+  },
+  {
+    "nome": "Cerami",
+    "provincia": "EN",
+    "lat": 37.80953,
+    "lon": 14.5066
+  },
+  {
+    "nome": "Gagliano Castelferrato",
+    "provincia": "EN",
+    "lat": 37.70967,
+    "lon": 14.53524
+  },
+  {
+    "nome": "Leonforte",
+    "provincia": "EN",
+    "lat": 37.64197,
+    "lon": 14.39766
+  },
+  {
+    "nome": "Nicosia",
+    "provincia": "EN",
+    "lat": 37.74747,
+    "lon": 14.39218
+  },
+  {
+    "nome": "Nissoria",
+    "provincia": "EN",
+    "lat": 37.6541,
+    "lon": 14.4481
+  },
+  {
+    "nome": "Piazza Armerina",
+    "provincia": "EN",
+    "lat": 37.38417,
+    "lon": 14.36921
+  },
+  {
+    "nome": "Pietraperzia",
+    "provincia": "EN",
+    "lat": 37.41852,
+    "lon": 14.13739
+  },
+  {
+    "nome": "Regalbuto",
+    "provincia": "EN",
+    "lat": 37.65195,
+    "lon": 14.63915
+  },
+  {
+    "nome": "Sperlinga",
+    "provincia": "EN",
+    "lat": 37.76653,
+    "lon": 14.35075
+  },
+  {
+    "nome": "Troina",
+    "provincia": "EN",
+    "lat": 37.78437,
+    "lon": 14.59605
+  },
+  {
+    "nome": "Valguarnera Caropepe",
+    "provincia": "EN",
+    "lat": 37.49527,
+    "lon": 14.39025
+  },
+  {
+    "nome": "Villarosa",
+    "provincia": "EN",
+    "lat": 37.58753,
+    "lon": 14.17089
+  },
+  {
+    "nome": "Messina",
+    "provincia": "ME",
+    "lat": 38.19394,
+    "lon": 15.55256
+  },
+  {
+    "nome": "Acquedolci",
+    "provincia": "ME",
+    "lat": 38.05708,
+    "lon": 14.5855
+  },
+  {
+    "nome": "Alcara li Fusi",
+    "provincia": "ME",
+    "lat": 38.02143,
+    "lon": 14.70142
+  },
+  {
+    "nome": "Alì",
+    "provincia": "ME",
+    "lat": 38.02678,
+    "lon": 15.4191
+  },
+  {
+    "nome": "Alì Terme",
+    "provincia": "ME",
+    "lat": 38.00506,
+    "lon": 15.42269
+  },
+  {
+    "nome": "Antillo",
+    "provincia": "ME",
+    "lat": 37.97937,
+    "lon": 15.24029
+  },
+  {
+    "nome": "Barcellona Pozzo di Gotto",
+    "provincia": "ME",
+    "lat": 38.14772,
+    "lon": 15.21469
+  },
+  {
+    "nome": "Basicò",
+    "provincia": "ME",
+    "lat": 38.06077,
+    "lon": 15.06263
+  },
+  {
+    "nome": "Brolo",
+    "provincia": "ME",
+    "lat": 38.15623,
+    "lon": 14.82799
+  },
+  {
+    "nome": "Capizzi",
+    "provincia": "ME",
+    "lat": 37.84788,
+    "lon": 14.47976
+  },
+  {
+    "nome": "Capo d'Orlando",
+    "provincia": "ME",
+    "lat": 38.14262,
+    "lon": 14.73292
+  },
+  {
+    "nome": "Capri Leone",
+    "provincia": "ME",
+    "lat": 38.08682,
+    "lon": 14.72959
+  },
+  {
+    "nome": "Caronia",
+    "provincia": "ME",
+    "lat": 38.02381,
+    "lon": 14.44142
+  },
+  {
+    "nome": "Casalvecchio Siculo",
+    "provincia": "ME",
+    "lat": 37.9585,
+    "lon": 15.32371
+  },
+  {
+    "nome": "Castel di Lucio",
+    "provincia": "ME",
+    "lat": 37.88698,
+    "lon": 14.31116
+  },
+  {
+    "nome": "Castell'Umberto",
+    "provincia": "ME",
+    "lat": 38.08626,
+    "lon": 14.80686
+  },
+  {
+    "nome": "Castelmola",
+    "provincia": "ME",
+    "lat": 37.85829,
+    "lon": 15.27713
+  },
+  {
+    "nome": "Castroreale",
+    "provincia": "ME",
+    "lat": 38.09857,
+    "lon": 15.21012
+  },
+  {
+    "nome": "Cesarò",
+    "provincia": "ME",
+    "lat": 37.84476,
+    "lon": 14.71308
+  },
+  {
+    "nome": "Condrò",
+    "provincia": "ME",
+    "lat": 38.17375,
+    "lon": 15.3266
+  },
+  {
+    "nome": "Falcone",
+    "provincia": "ME",
+    "lat": 38.11698,
+    "lon": 15.07965
+  },
+  {
+    "nome": "Ficarra",
+    "provincia": "ME",
+    "lat": 38.10849,
+    "lon": 14.8299
+  },
+  {
+    "nome": "Fiumedinisi",
+    "provincia": "ME",
+    "lat": 38.02596,
+    "lon": 15.38099
+  },
+  {
+    "nome": "Floresta",
+    "provincia": "ME",
+    "lat": 37.98779,
+    "lon": 14.91096
+  },
+  {
+    "nome": "Fondachelli-Fantina",
+    "provincia": "ME",
+    "lat": 37.98476,
+    "lon": 15.17519
+  },
+  {
+    "nome": "Forza d'Agrò",
+    "provincia": "ME",
+    "lat": 37.91539,
+    "lon": 15.33409
+  },
+  {
+    "nome": "Francavilla di Sicilia",
+    "provincia": "ME",
+    "lat": 37.90197,
+    "lon": 15.13821
+  },
+  {
+    "nome": "Frazzanò",
+    "provincia": "ME",
+    "lat": 38.07202,
+    "lon": 14.74407
+  },
+  {
+    "nome": "Furci Siculo",
+    "provincia": "ME",
+    "lat": 37.96159,
+    "lon": 15.37763
+  },
+  {
+    "nome": "Furnari",
+    "provincia": "ME",
+    "lat": 38.10436,
+    "lon": 15.12358
+  },
+  {
+    "nome": "Gaggi",
+    "provincia": "ME",
+    "lat": 37.85995,
+    "lon": 15.22126
+  },
+  {
+    "nome": "Galati Mamertino",
+    "provincia": "ME",
+    "lat": 38.03176,
+    "lon": 14.77145
+  },
+  {
+    "nome": "Gallodoro",
+    "provincia": "ME",
+    "lat": 37.90206,
+    "lon": 15.29359
+  },
+  {
+    "nome": "Giardini-Naxos",
+    "provincia": "ME",
+    "lat": 37.82755,
+    "lon": 15.26713
+  },
+  {
+    "nome": "Gioiosa Marea",
+    "provincia": "ME",
+    "lat": 38.17373,
+    "lon": 14.89932
+  },
+  {
+    "nome": "Graniti",
+    "provincia": "ME",
+    "lat": 37.88986,
+    "lon": 15.22459
+  },
+  {
+    "nome": "Gualtieri Sicaminò",
+    "provincia": "ME",
+    "lat": 38.16267,
+    "lon": 15.31699
+  },
+  {
+    "nome": "Itala",
+    "provincia": "ME",
+    "lat": 38.05144,
+    "lon": 15.43706
+  },
+  {
+    "nome": "Librizzi",
+    "provincia": "ME",
+    "lat": 38.09719,
+    "lon": 14.95909
+  },
+  {
+    "nome": "Limina",
+    "provincia": "ME",
+    "lat": 37.94076,
+    "lon": 15.27119
+  },
+  {
+    "nome": "Lipari",
+    "provincia": "ME",
+    "lat": 38.46743,
+    "lon": 14.95398
+  },
+  {
+    "nome": "Longi",
+    "provincia": "ME",
+    "lat": 38.02617,
+    "lon": 14.75306
+  },
+  {
+    "nome": "Malfa",
+    "provincia": "ME",
+    "lat": 38.5773,
+    "lon": 14.83598
+  },
+  {
+    "nome": "Malvagna",
+    "provincia": "ME",
+    "lat": 37.91752,
+    "lon": 15.05548
+  },
+  {
+    "nome": "Mandanici",
+    "provincia": "ME",
+    "lat": 38.00356,
+    "lon": 15.31669
+  },
+  {
+    "nome": "Mazzarrà Sant'Andrea",
+    "provincia": "ME",
+    "lat": 38.08969,
+    "lon": 15.13535
+  },
+  {
+    "nome": "Merì",
+    "provincia": "ME",
+    "lat": 38.1663,
+    "lon": 15.2497
+  },
+  {
+    "nome": "Milazzo",
+    "provincia": "ME",
+    "lat": 38.22008,
+    "lon": 15.24023
+  },
+  {
+    "nome": "Militello Rosmarino",
+    "provincia": "ME",
+    "lat": 38.04575,
+    "lon": 14.67584
+  },
+  {
+    "nome": "Mirto",
+    "provincia": "ME",
+    "lat": 38.08439,
+    "lon": 14.74609
+  },
+  {
+    "nome": "Mistretta",
+    "provincia": "ME",
+    "lat": 37.92823,
+    "lon": 14.3578
+  },
+  {
+    "nome": "Mojo Alcantara",
+    "provincia": "ME",
+    "lat": 37.90056,
+    "lon": 15.05072
+  },
+  {
+    "nome": "Monforte San Giorgio",
+    "provincia": "ME",
+    "lat": 38.15733,
+    "lon": 15.38132
+  },
+  {
+    "nome": "Mongiuffi Melia",
+    "provincia": "ME",
+    "lat": 37.90336,
+    "lon": 15.27539
+  },
+  {
+    "nome": "Montagnareale",
+    "provincia": "ME",
+    "lat": 38.13216,
+    "lon": 14.94658
+  },
+  {
+    "nome": "Montalbano Elicona",
+    "provincia": "ME",
+    "lat": 38.0236,
+    "lon": 15.01393
+  },
+  {
+    "nome": "Motta Camastra",
+    "provincia": "ME",
+    "lat": 37.89431,
+    "lon": 15.17008
+  },
+  {
+    "nome": "Motta d'Affermo",
+    "provincia": "ME",
+    "lat": 37.98096,
+    "lon": 14.30337
+  },
+  {
+    "nome": "Naso",
+    "provincia": "ME",
+    "lat": 38.12215,
+    "lon": 14.78702
+  },
+  {
+    "nome": "Nizza di Sicilia",
+    "provincia": "ME",
+    "lat": 37.99081,
+    "lon": 15.40956
+  },
+  {
+    "nome": "Novara di Sicilia",
+    "provincia": "ME",
+    "lat": 38.01538,
+    "lon": 15.13134
+  },
+  {
+    "nome": "Oliveri",
+    "provincia": "ME",
+    "lat": 38.12515,
+    "lon": 15.06068
+  },
+  {
+    "nome": "Pace del Mela",
+    "provincia": "ME",
+    "lat": 38.17997,
+    "lon": 15.30629
+  },
+  {
+    "nome": "Pagliara",
+    "provincia": "ME",
+    "lat": 37.98546,
+    "lon": 15.35969
+  },
+  {
+    "nome": "Patti",
+    "provincia": "ME",
+    "lat": 38.14736,
+    "lon": 14.96409
+  },
+  {
+    "nome": "Pettineo",
+    "provincia": "ME",
+    "lat": 37.96793,
+    "lon": 14.29118
+  },
+  {
+    "nome": "Piraino",
+    "provincia": "ME",
+    "lat": 38.16127,
+    "lon": 14.861
+  },
+  {
+    "nome": "Raccuja",
+    "provincia": "ME",
+    "lat": 38.05583,
+    "lon": 14.91044
+  },
+  {
+    "nome": "Reitano",
+    "provincia": "ME",
+    "lat": 37.97198,
+    "lon": 14.34418
+  },
+  {
+    "nome": "Roccafiorita",
+    "provincia": "ME",
+    "lat": 37.93086,
+    "lon": 15.26739
+  },
+  {
+    "nome": "Roccalumera",
+    "provincia": "ME",
+    "lat": 37.97554,
+    "lon": 15.39439
+  },
+  {
+    "nome": "Roccavaldina",
+    "provincia": "ME",
+    "lat": 38.18296,
+    "lon": 15.37402
+  },
+  {
+    "nome": "Roccella Valdemone",
+    "provincia": "ME",
+    "lat": 37.93289,
+    "lon": 15.00997
+  },
+  {
+    "nome": "Rometta",
+    "provincia": "ME",
+    "lat": 38.17007,
+    "lon": 15.41429
+  },
+  {
+    "nome": "San Filippo del Mela",
+    "provincia": "ME",
+    "lat": 38.17007,
+    "lon": 15.27338
+  },
+  {
+    "nome": "San Fratello",
+    "provincia": "ME",
+    "lat": 38.01556,
+    "lon": 14.59818
+  },
+  {
+    "nome": "San Marco d'Alunzio",
+    "provincia": "ME",
+    "lat": 38.07261,
+    "lon": 14.70093
+  },
+  {
+    "nome": "San Pier Niceto",
+    "provincia": "ME",
+    "lat": 38.1605,
+    "lon": 15.34982
+  },
+  {
+    "nome": "San Piero Patti",
+    "provincia": "ME",
+    "lat": 38.05214,
+    "lon": 14.96816
+  },
+  {
+    "nome": "San Salvatore di Fitalia",
+    "provincia": "ME",
+    "lat": 38.06841,
+    "lon": 14.77799
+  },
+  {
+    "nome": "Santa Domenica Vittoria",
+    "provincia": "ME",
+    "lat": 37.91624,
+    "lon": 14.96288
+  },
+  {
+    "nome": "Santa Lucia del Mela",
+    "provincia": "ME",
+    "lat": 38.14408,
+    "lon": 15.28055
+  },
+  {
+    "nome": "Santa Marina Salina",
+    "provincia": "ME",
+    "lat": 38.56117,
+    "lon": 14.87077
+  },
+  {
+    "nome": "Sant'Agata di Militello",
+    "provincia": "ME",
+    "lat": 38.06838,
+    "lon": 14.636
+  },
+  {
+    "nome": "Sant'Alessio Siculo",
+    "provincia": "ME",
+    "lat": 37.92516,
+    "lon": 15.34968
+  },
+  {
+    "nome": "Sant'Angelo di Brolo",
+    "provincia": "ME",
+    "lat": 38.11518,
+    "lon": 14.88403
+  },
+  {
+    "nome": "Santo Stefano di Camastra",
+    "provincia": "ME",
+    "lat": 38.01295,
+    "lon": 14.35142
+  },
+  {
+    "nome": "Saponara",
+    "provincia": "ME",
+    "lat": 38.19241,
+    "lon": 15.43442
+  },
+  {
+    "nome": "Savoca",
+    "provincia": "ME",
+    "lat": 37.95326,
+    "lon": 15.34009
+  },
+  {
+    "nome": "Scaletta Zanclea",
+    "provincia": "ME",
+    "lat": 38.04796,
+    "lon": 15.46769
+  },
+  {
+    "nome": "Sinagra",
+    "provincia": "ME",
+    "lat": 38.08191,
+    "lon": 14.85009
+  },
+  {
+    "nome": "Spadafora",
+    "provincia": "ME",
+    "lat": 38.22349,
+    "lon": 15.38178
+  },
+  {
+    "nome": "Taormina",
+    "provincia": "ME",
+    "lat": 37.85358,
+    "lon": 15.28851
+  },
+  {
+    "nome": "Torrenova",
+    "provincia": "ME",
+    "lat": 38.09246,
+    "lon": 14.67917
+  },
+  {
+    "nome": "Tortorici",
+    "provincia": "ME",
+    "lat": 38.02973,
+    "lon": 14.82212
+  },
+  {
+    "nome": "Tripi",
+    "provincia": "ME",
+    "lat": 38.04673,
+    "lon": 15.0967
+  },
+  {
+    "nome": "Tusa",
+    "provincia": "ME",
+    "lat": 37.98385,
+    "lon": 14.23606
+  },
+  {
+    "nome": "Ucria",
+    "provincia": "ME",
+    "lat": 38.04624,
+    "lon": 14.88087
+  },
+  {
+    "nome": "Valdina",
+    "provincia": "ME",
+    "lat": 38.19351,
+    "lon": 15.3698
+  },
+  {
+    "nome": "Venetico",
+    "provincia": "ME",
+    "lat": 38.19307,
+    "lon": 15.38119
+  },
+  {
+    "nome": "Villafranca Tirrena",
+    "provincia": "ME",
+    "lat": 38.23952,
+    "lon": 15.43885
+  },
+  {
+    "nome": "Alia",
+    "provincia": "PA",
+    "lat": 37.77867,
+    "lon": 13.71391
+  },
+  {
+    "nome": "Alimena",
+    "provincia": "PA",
+    "lat": 37.6931,
+    "lon": 14.11369
+  },
+  {
+    "nome": "Aliminusa",
+    "provincia": "PA",
+    "lat": 37.86395,
+    "lon": 13.78126
+  },
+  {
+    "nome": "Altavilla Milicia",
+    "provincia": "PA",
+    "lat": 38.038,
+    "lon": 13.54947
+  },
+  {
+    "nome": "Altofonte",
+    "provincia": "PA",
+    "lat": 38.04298,
+    "lon": 13.29434
+  },
+  {
+    "nome": "Bagheria",
+    "provincia": "PA",
+    "lat": 38.07892,
+    "lon": 13.51237
+  },
+  {
+    "nome": "Balestrate",
+    "provincia": "PA",
+    "lat": 38.05125,
+    "lon": 13.00724
+  },
+  {
+    "nome": "Baucina",
+    "provincia": "PA",
+    "lat": 37.92521,
+    "lon": 13.53636
+  },
+  {
+    "nome": "Belmonte Mezzagno",
+    "provincia": "PA",
+    "lat": 38.04653,
+    "lon": 13.39207
+  },
+  {
+    "nome": "Bisacquino",
+    "provincia": "PA",
+    "lat": 37.70352,
+    "lon": 13.26051
+  },
+  {
+    "nome": "Blufi",
+    "provincia": "PA",
+    "lat": 37.75205,
+    "lon": 14.07296
+  },
+  {
+    "nome": "Bolognetta",
+    "provincia": "PA",
+    "lat": 37.9712,
+    "lon": 13.45627
+  },
+  {
+    "nome": "Bompietro",
+    "provincia": "PA",
+    "lat": 37.74394,
+    "lon": 14.0947
+  },
+  {
+    "nome": "Borgetto",
+    "provincia": "PA",
+    "lat": 38.04664,
+    "lon": 13.14071
+  },
+  {
+    "nome": "Caccamo",
+    "provincia": "PA",
+    "lat": 37.93357,
+    "lon": 13.66808
+  },
+  {
+    "nome": "Caltavuturo",
+    "provincia": "PA",
+    "lat": 37.8204,
+    "lon": 13.89158
+  },
+  {
+    "nome": "Campofelice di Fitalia",
+    "provincia": "PA",
+    "lat": 37.82686,
+    "lon": 13.48572
+  },
+  {
+    "nome": "Campofelice di Roccella",
+    "provincia": "PA",
+    "lat": 37.9927,
+    "lon": 13.87648
+  },
+  {
+    "nome": "Campofiorito",
+    "provincia": "PA",
+    "lat": 37.75374,
+    "lon": 13.26875
+  },
+  {
+    "nome": "Camporeale",
+    "provincia": "PA",
+    "lat": 37.88612,
+    "lon": 13.10107
+  },
+  {
+    "nome": "Capaci",
+    "provincia": "PA",
+    "lat": 38.17107,
+    "lon": 13.2393
+  },
+  {
+    "nome": "Carini",
+    "provincia": "PA",
+    "lat": 38.1324,
+    "lon": 13.18274
+  },
+  {
+    "nome": "Castelbuono",
+    "provincia": "PA",
+    "lat": 37.9253,
+    "lon": 14.08665
+  },
+  {
+    "nome": "Casteldaccia",
+    "provincia": "PA",
+    "lat": 38.05121,
+    "lon": 13.53041
+  },
+  {
+    "nome": "Castellana Sicula",
+    "provincia": "PA",
+    "lat": 37.78686,
+    "lon": 14.03906
+  },
+  {
+    "nome": "Castronovo di Sicilia",
+    "provincia": "PA",
+    "lat": 37.67894,
+    "lon": 13.60346
+  },
+  {
+    "nome": "Cefalà Diana",
+    "provincia": "PA",
+    "lat": 37.91565,
+    "lon": 13.46325
+  },
+  {
+    "nome": "Cefalù",
+    "provincia": "PA",
+    "lat": 38.03856,
+    "lon": 14.02285
+  },
+  {
+    "nome": "Cerda",
+    "provincia": "PA",
+    "lat": 37.90578,
+    "lon": 13.81496
+  },
+  {
+    "nome": "Chiusa Sclafani",
+    "provincia": "PA",
+    "lat": 37.67692,
+    "lon": 13.27074
+  },
+  {
+    "nome": "Ciminna",
+    "provincia": "PA",
+    "lat": 37.89765,
+    "lon": 13.55966
+  },
+  {
+    "nome": "Cinisi",
+    "provincia": "PA",
+    "lat": 38.16082,
+    "lon": 13.10099
+  },
+  {
+    "nome": "Collesano",
+    "provincia": "PA",
+    "lat": 37.91809,
+    "lon": 13.93702
+  },
+  {
+    "nome": "Contessa Entellina",
+    "provincia": "PA",
+    "lat": 37.73005,
+    "lon": 13.18425
+  },
+  {
+    "nome": "Corleone",
+    "provincia": "PA",
+    "lat": 37.81338,
+    "lon": 13.3017
+  },
+  {
+    "nome": "Ficarazzi",
+    "provincia": "PA",
+    "lat": 38.09229,
+    "lon": 13.4639
+  },
+  {
+    "nome": "Gangi",
+    "provincia": "PA",
+    "lat": 37.79565,
+    "lon": 14.20437
+  },
+  {
+    "nome": "Geraci Siculo",
+    "provincia": "PA",
+    "lat": 37.85901,
+    "lon": 14.15333
+  },
+  {
+    "nome": "Giardinello",
+    "provincia": "PA",
+    "lat": 38.08706,
+    "lon": 13.15648
+  },
+  {
+    "nome": "Giuliana",
+    "provincia": "PA",
+    "lat": 37.6728,
+    "lon": 13.23737
+  },
+  {
+    "nome": "Godrano",
+    "provincia": "PA",
+    "lat": 37.9031,
+    "lon": 13.42823
+  },
+  {
+    "nome": "Gratteri",
+    "provincia": "PA",
+    "lat": 37.96607,
+    "lon": 13.97314
+  },
+  {
+    "nome": "Isnello",
+    "provincia": "PA",
+    "lat": 37.94324,
+    "lon": 14.00724
+  },
+  {
+    "nome": "Isola delle Femmine",
+    "provincia": "PA",
+    "lat": 38.19123,
+    "lon": 13.24691
+  },
+  {
+    "nome": "Lascari",
+    "provincia": "PA",
+    "lat": 38.00067,
+    "lon": 13.94053
+  },
+  {
+    "nome": "Lercara Friddi",
+    "provincia": "PA",
+    "lat": 37.74657,
+    "lon": 13.60391
+  },
+  {
+    "nome": "Marineo",
+    "provincia": "PA",
+    "lat": 37.95185,
+    "lon": 13.41781
+  },
+  {
+    "nome": "Mezzojuso",
+    "provincia": "PA",
+    "lat": 37.86509,
+    "lon": 13.46509
+  },
+  {
+    "nome": "Misilmeri",
+    "provincia": "PA",
+    "lat": 38.03183,
+    "lon": 13.44795
+  },
+  {
+    "nome": "Monreale",
+    "provincia": "PA",
+    "lat": 38.08125,
+    "lon": 13.28947
+  },
+  {
+    "nome": "Montelepre",
+    "provincia": "PA",
+    "lat": 38.09026,
+    "lon": 13.17518
+  },
+  {
+    "nome": "Montemaggiore Belsito",
+    "provincia": "PA",
+    "lat": 37.84818,
+    "lon": 13.76206
+  },
+  {
+    "nome": "Palazzo Adriano",
+    "provincia": "PA",
+    "lat": 37.68066,
+    "lon": 13.37941
+  },
+  {
+    "nome": "Partinico",
+    "provincia": "PA",
+    "lat": 38.04657,
+    "lon": 13.11785
+  },
+  {
+    "nome": "Petralia Soprana",
+    "provincia": "PA",
+    "lat": 37.80064,
+    "lon": 14.10813
+  },
+  {
+    "nome": "Petralia Sottana",
+    "provincia": "PA",
+    "lat": 37.80919,
+    "lon": 14.09293
+  },
+  {
+    "nome": "Piana degli Albanesi",
+    "provincia": "PA",
+    "lat": 37.99372,
+    "lon": 13.28464
+  },
+  {
+    "nome": "Polizzi Generosa",
+    "provincia": "PA",
+    "lat": 37.81159,
+    "lon": 14.00268
+  },
+  {
+    "nome": "Pollina",
+    "provincia": "PA",
+    "lat": 37.99309,
+    "lon": 14.14586
+  },
+  {
+    "nome": "Prizzi",
+    "provincia": "PA",
+    "lat": 37.72088,
+    "lon": 13.43435
+  },
+  {
+    "nome": "Roccamena",
+    "provincia": "PA",
+    "lat": 37.83824,
+    "lon": 13.15513
+  },
+  {
+    "nome": "Roccapalumba",
+    "provincia": "PA",
+    "lat": 37.80825,
+    "lon": 13.63671
+  },
+  {
+    "nome": "San Cipirello",
+    "provincia": "PA",
+    "lat": 37.96067,
+    "lon": 13.17732
+  },
+  {
+    "nome": "San Giuseppe Jato",
+    "provincia": "PA",
+    "lat": 37.97331,
+    "lon": 13.18889
+  },
+  {
+    "nome": "San Mauro Castelverde",
+    "provincia": "PA",
+    "lat": 37.91478,
+    "lon": 14.18961
+  },
+  {
+    "nome": "Santa Cristina Gela",
+    "provincia": "PA",
+    "lat": 37.98514,
+    "lon": 13.32747
+  },
+  {
+    "nome": "Santa Flavia",
+    "provincia": "PA",
+    "lat": 38.10448,
+    "lon": 13.5334
+  },
+  {
+    "nome": "Sciara",
+    "provincia": "PA",
+    "lat": 37.91511,
+    "lon": 13.76177
+  },
+  {
+    "nome": "Scillato",
+    "provincia": "PA",
+    "lat": 37.85778,
+    "lon": 13.90632
+  },
+  {
+    "nome": "Sclafani Bagni",
+    "provincia": "PA",
+    "lat": 37.82175,
+    "lon": 13.85476
+  },
+  {
+    "nome": "Termini Imerese",
+    "provincia": "PA",
+    "lat": 37.98225,
+    "lon": 13.69729
+  },
+  {
+    "nome": "Terrasini",
+    "provincia": "PA",
+    "lat": 38.14621,
+    "lon": 13.08319
+  },
+  {
+    "nome": "Torretta",
+    "provincia": "PA",
+    "lat": 38.13036,
+    "lon": 13.23549
+  },
+  {
+    "nome": "Trabia",
+    "provincia": "PA",
+    "lat": 38.0042,
+    "lon": 13.63393
+  },
+  {
+    "nome": "Trappeto",
+    "provincia": "PA",
+    "lat": 38.06875,
+    "lon": 13.03794
+  },
+  {
+    "nome": "Ustica",
+    "provincia": "PA",
+    "lat": 38.70985,
+    "lon": 13.19293
+  },
+  {
+    "nome": "Valledolmo",
+    "provincia": "PA",
+    "lat": 37.74703,
+    "lon": 13.82811
+  },
+  {
+    "nome": "Ventimiglia di Sicilia",
+    "provincia": "PA",
+    "lat": 37.92361,
+    "lon": 13.56768
+  },
+  {
+    "nome": "Vicari",
+    "provincia": "PA",
+    "lat": 37.82371,
+    "lon": 13.56889
+  },
+  {
+    "nome": "Villabate",
+    "provincia": "PA",
+    "lat": 38.07789,
+    "lon": 13.44275
+  },
+  {
+    "nome": "Villafrati",
+    "provincia": "PA",
+    "lat": 37.90646,
+    "lon": 13.48486
+  },
+  {
+    "nome": "Ragusa",
+    "provincia": "RG",
+    "lat": 36.92574,
+    "lon": 14.72443
+  },
+  {
+    "nome": "Acate",
+    "provincia": "RG",
+    "lat": 37.02318,
+    "lon": 14.49302
+  },
+  {
+    "nome": "Chiaramonte Gulfi",
+    "provincia": "RG",
+    "lat": 37.0305,
+    "lon": 14.70302
+  },
+  {
+    "nome": "Comiso",
+    "provincia": "RG",
+    "lat": 36.94893,
+    "lon": 14.60731
+  },
+  {
+    "nome": "Giarratana",
+    "provincia": "RG",
+    "lat": 37.04741,
+    "lon": 14.79454
+  },
+  {
+    "nome": "Ispica",
+    "provincia": "RG",
+    "lat": 36.78622,
+    "lon": 14.9053
+  },
+  {
+    "nome": "Modica",
+    "provincia": "RG",
+    "lat": 36.85868,
+    "lon": 14.75966
+  },
+  {
+    "nome": "Monterosso Almo",
+    "provincia": "RG",
+    "lat": 37.08884,
+    "lon": 14.76498
+  },
+  {
+    "nome": "Pozzallo",
+    "provincia": "RG",
+    "lat": 36.73028,
+    "lon": 14.84672
+  },
+  {
+    "nome": "Santa Croce Camerina",
+    "provincia": "RG",
+    "lat": 36.82842,
+    "lon": 14.52538
+  },
+  {
+    "nome": "Scicli",
+    "provincia": "RG",
+    "lat": 36.79014,
+    "lon": 14.7028
+  },
+  {
+    "nome": "Vittoria",
+    "provincia": "RG",
+    "lat": 36.95151,
+    "lon": 14.52788
+  },
+  {
+    "nome": "Siracusa",
+    "provincia": "SR",
+    "lat": 37.07542,
+    "lon": 15.28664
+  },
+  {
+    "nome": "Augusta",
+    "provincia": "SR",
+    "lat": 37.24065,
+    "lon": 15.22121
+  },
+  {
+    "nome": "Avola",
+    "provincia": "SR",
+    "lat": 36.9084,
+    "lon": 15.13937
+  },
+  {
+    "nome": "Buccheri",
+    "provincia": "SR",
+    "lat": 37.12494,
+    "lon": 14.85222
+  },
+  {
+    "nome": "Buscemi",
+    "provincia": "SR",
+    "lat": 37.08604,
+    "lon": 14.88499
+  },
+  {
+    "nome": "Canicattini Bagni",
+    "provincia": "SR",
+    "lat": 37.03171,
+    "lon": 15.06388
+  },
+  {
+    "nome": "Carlentini",
+    "provincia": "SR",
+    "lat": 37.28071,
+    "lon": 15.0102
+  },
+  {
+    "nome": "Cassaro",
+    "provincia": "SR",
+    "lat": 37.10571,
+    "lon": 14.94697
+  },
+  {
+    "nome": "Ferla",
+    "provincia": "SR",
+    "lat": 37.11978,
+    "lon": 14.93881
+  },
+  {
+    "nome": "Floridia",
+    "provincia": "SR",
+    "lat": 37.08343,
+    "lon": 15.15332
+  },
+  {
+    "nome": "Francofonte",
+    "provincia": "SR",
+    "lat": 37.22477,
+    "lon": 14.87488
+  },
+  {
+    "nome": "Lentini",
+    "provincia": "SR",
+    "lat": 37.28556,
+    "lon": 14.99737
+  },
+  {
+    "nome": "Melilli",
+    "provincia": "SR",
+    "lat": 37.17821,
+    "lon": 15.1302
+  },
+  {
+    "nome": "Noto",
+    "provincia": "SR",
+    "lat": 36.89244,
+    "lon": 15.06977
+  },
+  {
+    "nome": "Pachino",
+    "provincia": "SR",
+    "lat": 36.71522,
+    "lon": 15.09019
+  },
+  {
+    "nome": "Palazzolo Acreide",
+    "provincia": "SR",
+    "lat": 37.06261,
+    "lon": 14.90593
+  },
+  {
+    "nome": "Portopalo di Capo Passero",
+    "provincia": "SR",
+    "lat": 36.68219,
+    "lon": 15.13378
+  },
+  {
+    "nome": "Priolo Gargallo",
+    "provincia": "SR",
+    "lat": 37.15512,
+    "lon": 15.18248
+  },
+  {
+    "nome": "Rosolini",
+    "provincia": "SR",
+    "lat": 36.82145,
+    "lon": 14.95132
+  },
+  {
+    "nome": "Solarino",
+    "provincia": "SR",
+    "lat": 37.10136,
+    "lon": 15.11988
+  },
+  {
+    "nome": "Sortino",
+    "provincia": "SR",
+    "lat": 37.15881,
+    "lon": 15.02998
+  },
+  {
+    "nome": "Trapani",
+    "provincia": "TP",
+    "lat": 38.0176,
+    "lon": 12.53617
+  },
+  {
+    "nome": "Alcamo",
+    "provincia": "TP",
+    "lat": 37.9779,
+    "lon": 12.96473
+  },
+  {
+    "nome": "Buseto Palizzolo",
+    "provincia": "TP",
+    "lat": 38.00339,
+    "lon": 12.70911
+  },
+  {
+    "nome": "Campobello di Mazara",
+    "provincia": "TP",
+    "lat": 37.63464,
+    "lon": 12.74946
+  },
+  {
+    "nome": "Castellammare del Golfo",
+    "provincia": "TP",
+    "lat": 38.02653,
+    "lon": 12.88183
+  },
+  {
+    "nome": "Castelvetrano",
+    "provincia": "TP",
+    "lat": 37.68081,
+    "lon": 12.79194
+  },
+  {
+    "nome": "Custonaci",
+    "provincia": "TP",
+    "lat": 38.07931,
+    "lon": 12.68571
+  },
+  {
+    "nome": "Erice",
+    "provincia": "TP",
+    "lat": 38.03785,
+    "lon": 12.58778
+  },
+  {
+    "nome": "Favignana",
+    "provincia": "TP",
+    "lat": 37.92951,
+    "lon": 12.32958
+  },
+  {
+    "nome": "Gibellina",
+    "provincia": "TP",
+    "lat": 37.80704,
+    "lon": 12.86954
+  },
+  {
+    "nome": "Marsala",
+    "provincia": "TP",
+    "lat": 37.7992,
+    "lon": 12.4367
+  },
+  {
+    "nome": "Mazara del Vallo",
+    "provincia": "TP",
+    "lat": 37.65535,
+    "lon": 12.58986
+  },
+  {
+    "nome": "Paceco",
+    "provincia": "TP",
+    "lat": 37.98026,
+    "lon": 12.55766
+  },
+  {
+    "nome": "Pantelleria",
+    "provincia": "TP",
+    "lat": 36.82836,
+    "lon": 11.94611
+  },
+  {
+    "nome": "Partanna",
+    "provincia": "TP",
+    "lat": 37.7268,
+    "lon": 12.88917
+  },
+  {
+    "nome": "Petrosino",
+    "provincia": "TP",
+    "lat": 37.71271,
+    "lon": 12.49964
+  },
+  {
+    "nome": "Poggioreale",
+    "provincia": "TP",
+    "lat": 37.76404,
+    "lon": 13.03594
+  },
+  {
+    "nome": "Salaparuta",
+    "provincia": "TP",
+    "lat": 37.75694,
+    "lon": 13.00981
+  },
+  {
+    "nome": "Salemi",
+    "provincia": "TP",
+    "lat": 37.82199,
+    "lon": 12.80506
+  },
+  {
+    "nome": "San Vito Lo Capo",
+    "provincia": "TP",
+    "lat": 38.17395,
+    "lon": 12.73599
+  },
+  {
+    "nome": "Santa Ninfa",
+    "provincia": "TP",
+    "lat": 37.77042,
+    "lon": 12.87744
+  },
+  {
+    "nome": "Valderice",
+    "provincia": "TP",
+    "lat": 38.04005,
+    "lon": 12.61505
+  },
+  {
+    "nome": "Vita",
+    "provincia": "TP",
+    "lat": 37.86886,
+    "lon": 12.82755
+  }
+]
