@@ -34,7 +34,7 @@ const Header = () => {
         </Link>
 
         {/* Ricerca + toggle tema */}
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2">
           <CitySearch />
 
           <button
@@ -42,7 +42,7 @@ const Header = () => {
             aria-label="Cambia tema"
             onClick={() => setTheme(isDark ? "light" : "dark")}
             className={
-              "flex cursor-pointer items-center transition-transform duration-500 " +
+              "flex shrink-0 p-1 cursor-pointer items-center transition-transform duration-500 " +
               (isDark ? "rotate-180" : "rotate-0")
             }
           >

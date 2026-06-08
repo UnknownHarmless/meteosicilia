@@ -71,7 +71,7 @@ const CitySearch = () => {
     <>
       <Button
         variant="outline"
-        className="relative w-full justify-start gap-2 text-sm text-muted-foreground sm:pr-12 md:w-48 lg:w-64"
+        className="relative w-40 justify-start gap-2 text-sm text-muted-foreground sm:pr-12 md:w-48 lg:w-64"
         onClick={() => setOpen(true)}
       >
         <Search className="h-4 w-4" />
