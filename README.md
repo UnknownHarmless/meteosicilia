@@ -18,10 +18,6 @@ Live sensor data and AI-based forecasting for Palermo · Professional Open-Meteo
 
 ---
 
-## About this project
-
-I'm 19, and I built Meteo Sicilia end to end — hardware, backend and frontend — the same way I'd approach a professional project: solid architecture, real security considerations, and code meant to be maintained, not a one-off school exercise or a weekend toy.
-
 ## Overview
 
 Meteo Sicilia isn't "just a weather site": it's a full chain connecting a real sensor to a screen. A weather station built around a Raspberry Pi measures environmental conditions, sends them to a backend that stores them, and distributes them in real time to a modern, responsive web interface.
