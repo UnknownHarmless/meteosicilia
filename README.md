@@ -126,17 +126,14 @@ HTTPS/TLS is handled with a free Let's Encrypt certificate. The station is expos
 
 ## Preview
 
-> _Add a few screenshots of the app here (desktop and mobile)._
+<img width="1375" height="1236" alt="immagine" src="https://github.com/user-attachments/assets/c715eb4a-6199-474f-a2f5-009510c68303" />
+
 
 ## Credits
 
 Built as a collaborative project: station and data acquisition (Raspberry Pi, MQTT, sensors) + web application and integration.
 
-## License
 
-> _Pick a license (e.g. MIT) and state it here._
-
----
 
 <div align="center">
 <sub>Meteo Sicilia · from sensor to screen</sub>
